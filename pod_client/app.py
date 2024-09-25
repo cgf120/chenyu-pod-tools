@@ -9,7 +9,9 @@ import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from ttkbootstrap import Style
 from const.app_config import get_app_type, Plugin, PythonPackage, Model, PodConfig
-from utils.util import get_git_repo_info, parse_python_packages, calculate_sha256,get_os, civitai_query_model, query_cache_path, open_file_or_directory
+from utils.util import get_git_repo_info, parse_python_packages, calculate_sha256, get_os, civitai_query_model, \
+    query_cache_path, open_file_or_directory, add_models
+
 
 class App:
     def __init__(self, master):
@@ -179,6 +181,8 @@ class App:
             sha256 = calculate_sha256(model_path)
             model_id, download_url = civitai_query_model(sha256)
             cache_path = query_cache_path(sha256)
+            if cache_path is None and download_url is not None:
+                add_models(sha256)
             model_relpath = os.path.relpath(model_path, self.model_dir.get())
             if sha256 not in self.models:
                 self.models[sha256] = Model(model_name=model_name, model_id=model_id, sha256=sha256, cache_path=cache_path, file_path = [model_relpath], download_url= download_url)

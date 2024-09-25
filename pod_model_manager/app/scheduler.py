@@ -32,10 +32,11 @@ def scheduled_task(app):
                 need_down_model.download_url = download_url
                 # 下载到目录 {basedir}/0/{sha256}
                 output_file = os.path.join(output_dir,need_down_model.sha256)
+                need_down_model.cache_path = output_file
+                db.session.commit()
                 true_file_name,total_size = download_file(download_url,output_file)
                 need_down_model.true_file_name = true_file_name
                 need_down_model.size = total_size
-                need_down_model.cache_path = output_file
             elif need_down_model.model_type == "1":
                 # 获取所有需要下载的大文件
                 files = huggingface_query_lfs(need_down_model.name)

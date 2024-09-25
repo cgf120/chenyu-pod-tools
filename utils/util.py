@@ -13,7 +13,7 @@ import re
 import urllib.request
 from urllib.parse import urlparse, parse_qs, unquote
 
-from const.app_config import HUGGINGFACE_TOKEN, USER_AGENT, CIVIAI_API_KEY
+from const.app_config import HUGGINGFACE_TOKEN, USER_AGENT, CIVIAI_API_KEY, POD_MANAGER_URL
 
 logging.basicConfig(filename='app.log',
                     level=logging.INFO,
@@ -42,8 +42,32 @@ def civitai_query_model(sha256):
 
 """判断是否在晨羽缓存数据"""
 def query_cache_path(sha256):
-    return None
+    query_url = f"{POD_MANAGER_URL}/models/{sha256}"
+    logging.info(f"请求缓存数据: {query_url}")
+    try:
+        # 发出 GET 请求
+        response = requests.get(query_url)
+        response.raise_for_status()  # 如果响应状态码不是 200，抛出异常
+        # 解析 JSON 响应
+        data = response.json()
 
+        # 提取缓存路径
+        cache_path = data.get('cache_path')
+        logging.info(f"缓存路径: {cache_path}")
+        return cache_path
+    except requests.exceptions.RequestException as e:
+        logging.error(f"请求失败: {e}")
+        return None
+
+def add_models(sha256):
+    url = f"{POD_MANAGER_URL}/models"
+    logging.info(f"添加模型: {url}")
+    try:
+        # 发出 POST 请求
+        response = requests.post(url, json={"name": sha256, "model_type": "0"})
+        response.raise_for_status()  # 如果响应状态码不是 200，抛出异常
+    except requests.exceptions.RequestException as e:
+        logging.error(f"请求失败: {e}")
 
 def get_git_repo_info(repo_path):
     """获取 Git 仓库的地址、名称和当前 commit log"""
