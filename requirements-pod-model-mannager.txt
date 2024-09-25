@@ -3,3 +3,4 @@ pydantic
 flask
 flask-sqlalchemy
 apscheduler
+pymysql

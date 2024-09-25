@@ -12,8 +12,6 @@ from . import db
 from .config import MODEL_BASE_DIR
 from .models import Model
 
-huggingface_hub.login(token=HUGGINGFACE_TOKEN)
-
 def scheduled_task(app):
     with app.app_context():
         app.logger.info(f"开始执行任务： {datetime.now()}")

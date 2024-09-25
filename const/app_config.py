@@ -44,6 +44,8 @@ class Model(BaseModel):
     cache_path: Optional[str]
     file_path: list[str]
     download_url: Optional[str]
+    class Config:
+        protected_namespaces = ()
 
 class Plugin(BaseModel):
     name: str
@@ -66,4 +68,6 @@ class PodConfig(BaseModel):
     models: list[Model]
     plugins: list[Plugin]
     packages: list[PythonPackage]
+    class Config:
+        protected_namespaces = ()
 
