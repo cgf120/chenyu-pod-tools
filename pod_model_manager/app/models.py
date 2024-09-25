@@ -23,6 +23,8 @@ class Model(db.Model):
     cache_path = db.Column(db.String(256), nullable=True) # 缓存路径
     download_url = db.Column(db.String(1024), nullable=True)
     status = db.Column(db.String(32), nullable=True,default=0) # 模型状态 0: 未下载 1: 已下载 2: 下载中
+    size = db.Column(db.Integer, nullable=True) # 模型大小
+    true_file_name = db.Column(db.String(256), nullable=True) # 真实文件名
 
     def __repr__(self):
         return f'<Model {self.name}>'

@@ -1,9 +1,14 @@
 import json
+import logging
 import os.path
 import zipfile
 
 from const.app_config import PodConfig, get_app_type_by_identity_key, CIVIAI_API_KEY
 from utils.util import clone_and_checkout, download_file, path_cover
+
+logging.basicConfig(filename='pod-cloud.log',
+                    level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_pod_from_json(file_path: str) -> PodConfig:
     with open(file_path, 'r') as file:

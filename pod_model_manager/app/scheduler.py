@@ -18,10 +18,10 @@ huggingface_hub.login(token=HUGGINGFACE_TOKEN)
 
 def scheduled_task(app):
     with app.app_context():
-        print(f"开始执行任务： {datetime.now()}")
+        app.logger.info(f"开始执行任务： {datetime.now()}")
         need_down_model = Model.query.filter_by(status=0).first()
         if need_down_model:
-            print(f"下载模型: {need_down_model.name}")
+            app.logger.info(f"下载模型: {need_down_model.name}")
             need_down_model.status = 2
             db.session.commit()
             output_dir = f"{MODEL_BASE_DIR}/{need_down_model.model_type}"
@@ -34,11 +34,10 @@ def scheduled_task(app):
                 need_down_model.download_url = download_url
                 # 下载到目录 {basedir}/0/{sha256}
                 output_file = os.path.join(output_dir,need_down_model.sha256)
-                err = download_file(download_url,output_file,CIVIAI_API_KEY)
-                if err is not None:
-                    need_down_model.status = 0
-                    db.session.commit()
-                    return
+                true_file_name,total_size = download_file(download_url,output_file)
+                need_down_model.true_file_name = true_file_name
+                need_down_model.size = total_size
+
                 need_down_model.cache_path = output_file
             elif need_down_model.model_type == "1":
                 # 获取所有需要下载的大文件
@@ -57,24 +56,21 @@ def scheduled_task(app):
                     sub_model.cache_path = os.path.join(output_dir,sha256)
                     sub_model.sha256 = sha256
                     sub_model.status = 2
-                    sub_model.download_url = file_path
+                    sub_model.download_url = f"https://huggingface.co/{need_down_model.name}/resolve/main/{file_path}"
                     db.session.add(sub_model)
                     db.session.commit()
-                    local_file = hf_hub_download(repo_id=sub_model.name, filename=file_path, local_dir=output_dir)
-                    shutil.move(local_file,sub_model.cache_path)
+                    true_file_name,total_size = download_file(sub_model.download_url,sub_model.cache_path)
+                    need_down_model.true_file_name = true_file_name
+                    need_down_model.size = total_size
                     # 下载完成更新状态
                     sub_model.status = 1
                     db.session.commit()
-                # 删除目录
-                remove_subdirectories(output_dir)
-
-
             # 下载完成后修改状态
             need_down_model.status = 1
             db.session.commit()
-            print(f"Model {need_down_model.name} downloaded")
+            app.logger.info(f"Model {need_down_model.name} downloaded")
         else:
-            print("No model to download")
+            app.logger.info("No model to download")
 
 def start_scheduler(app):
     # 创建调度器并设置线程池执行器，最大并发任务数为 3
