@@ -2,7 +2,7 @@ import json
 import os.path
 import zipfile
 
-from const.app_config import PodConfig, get_app_type_by_identity_key
+from const.app_config import PodConfig, get_app_type_by_identity_key, CIVIAI_API_KEY
 from utils.util import clone_and_checkout, download_file, path_cover
 
 def load_pod_from_json(file_path: str) -> PodConfig:
@@ -42,7 +42,7 @@ if __name__ == "__main__":
         model_file = os.path.join(base_dir,path_cover(model.file_path[0],pod_config.app_dir))
         if model.cache_path is None and model.download_url is not None:
             print(f'下载模型:{model.download_url},到:{model_file}')
-            download_file(model.download_url,model_file)
+            download_file(model.download_url,model_file,CIVIAI_API_KEY)
             if len(model.file_path) > 1:
                 for i in range(1,len(model.file_path)):
                     repeat_model_file = os.path.join(base_dir,path_cover(model.file_path[i],pod_config.app_dir))

@@ -1,0 +1,4 @@
+pyinstaller
+ttkbootstrap
+requests
+pydantic

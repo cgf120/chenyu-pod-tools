@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.11 (cy-pod-tools)" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Go modules</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Import 和依赖项JavaScript 和 TypeScript</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript 和 TypeScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>TypeScriptJavaScript 和 TypeScript</id>
+          </State>
+          <State>
+            <id>代码样式问题Java</id>
+          </State>
+          <State>
+            <id>依赖项问题(go list -m -u)Go modules</id>
+          </State>
+          <State>
+            <id>可能引起混淆的代码结构Groovy</id>
+          </State>
+          <State>
+            <id>可能的 bugJava</id>
+          </State>
+          <State>
+            <id>可能的 bugKotlin</id>
+          </State>
+          <State>
+            <id>常规</id>
+          </State>
+          <State>
+            <id>常规JavaScript 和 TypeScript</id>
+          </State>
+          <State>
+            <id>性能Java</id>
+          </State>
+          <State>
+            <id>控制流问题Java</id>
+          </State>
+          <State>
+            <id>清单</id>
+          </State>
+          <State>
+            <id>继承问题Java</id>
+          </State>
+          <State>
+            <id>详细或冗余的代码结构Java</id>
+          </State>
+          <State>
+            <id>错误处理Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>用户定义</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
