@@ -1,15 +1,13 @@
+import json
 import os.path
-import shutil
 
 import huggingface_hub
 from apscheduler.executors.pool import ThreadPoolExecutor
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 
-from huggingface_hub import hf_hub_download, repo_info
-
-from const.app_config import CIVIAI_API_KEY, HUGGINGFACE_TOKEN
-from utils.util import civitai_query_model, download_file, huggingface_query_lfs, remove_subdirectories
+from const.app_config import HUGGINGFACE_TOKEN
+from utils.util import civitai_query_model, download_file, huggingface_query_lfs
 from . import db
 from .config import MODEL_BASE_DIR
 from .models import Model
@@ -37,7 +35,6 @@ def scheduled_task(app):
                 true_file_name,total_size = download_file(download_url,output_file)
                 need_down_model.true_file_name = true_file_name
                 need_down_model.size = total_size
-
                 need_down_model.cache_path = output_file
             elif need_down_model.model_type == "1":
                 # 获取所有需要下载的大文件
@@ -60,8 +57,8 @@ def scheduled_task(app):
                     db.session.add(sub_model)
                     db.session.commit()
                     true_file_name,total_size = download_file(sub_model.download_url,sub_model.cache_path)
-                    need_down_model.true_file_name = true_file_name
-                    need_down_model.size = total_size
+                    sub_model.true_file_name = true_file_name
+                    sub_model.size = total_size
                     # 下载完成更新状态
                     sub_model.status = 1
                     db.session.commit()
