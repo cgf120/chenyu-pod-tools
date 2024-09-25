@@ -2,3 +2,4 @@ pyinstaller
 ttkbootstrap
 requests
 pydantic
+huggingface_hub
