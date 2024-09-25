@@ -1,9 +1,9 @@
 import os
 
 # 数据库配置
-SQLALCHEMY_DATABASE_URI = 'sqlite:///../test.db'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../pod.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
-MODEL_BASE_DIR = "/Users/rohon/IdeaProjects/chenyu-pod-tools/tmp"
+MODEL_BASE_DIR = "/root/aigc-models/pod-models"
 
 
 
