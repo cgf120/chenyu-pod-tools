@@ -21,7 +21,7 @@ def create_model():
     new_model.name = identity
     db.session.add(new_model)
     db.session.commit()
-    return jsonify({'message': '添加成功'}), 201
+    return jsonify({'message': '添加成功'}), 200
 
 
 @api_bp.route('/models/<string:sha256>', methods=['GET'])

@@ -6,7 +6,6 @@ from apscheduler.executors.pool import ThreadPoolExecutor
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 
-from const.app_config import HUGGINGFACE_TOKEN
 from utils.util import civitai_query_model, download_file, huggingface_query_lfs
 from . import db
 from .config import MODEL_BASE_DIR

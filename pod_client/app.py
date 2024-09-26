@@ -182,6 +182,7 @@ class App:
             model_id, download_url = civitai_query_model(sha256)
             cache_path = query_cache_path(sha256)
             if cache_path is None and download_url is not None:
+                # 云端不存在，C站存在，添加到云端
                 add_models(sha256)
             model_relpath = os.path.relpath(model_path, self.model_dir.get())
             if sha256 not in self.models:
