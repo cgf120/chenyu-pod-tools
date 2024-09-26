@@ -3,6 +3,7 @@ import os
 import json
 
 
+
 def init_data(app):
     directory_path = "./json"
     # 遍历目录下的所有文件
