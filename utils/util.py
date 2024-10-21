@@ -117,19 +117,22 @@ def parse_python_packages(package_str:str):
                 package_name = package_info.group(1)
                 http_url = package_info.group(2)
                 return package_name, None, http_url, "remote",None
-        elif package_str.find("file") != -1:
+        elif package_str.startswith("file"):
             # 处理本地文件
-            package_info = re.match(r'([\w\-]+) @ (file.*)', package_str)
-            if package_info:
-                package_name = package_info.group(1)
-                return package_name, None, None, "local", None
+            return package_str.split(" @ ")[0], None, None, "local", None
         else:
             return None, None, None,"unknown",None
     except Exception as e:
         return None, None, None, None, e
 
 
-
+def link_file(src_file, dst_file):
+    if not os.path.exists(src_file):
+        raise FileNotFoundError(f"文件不存在: {src_file}")
+    if not os.path.exists(dst_file):
+        dst_dir = os.path.dirname(dst_file)
+        os.makedirs(dst_dir, exist_ok=True)
+        os.symlink(src_file, dst_file)
 
 def path_cover(file_path :str,base_dir):
     return file_path[file_path.index(base_dir):].replace("\\","/")

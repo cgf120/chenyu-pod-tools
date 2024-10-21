@@ -172,7 +172,6 @@ class App:
         file_list = []
         for root_dir, dirs, files in os.walk(self.model_dir.get()):
             for file in files:
-
                 file_list.append(os.path.join(root_dir, file))
         self.log_text.insert("1.0", f"【提示】模型目录：{self.model_dir.get()},共需要处理模型{len(file_list)}个\n")
         for index, model_path in enumerate(file_list):

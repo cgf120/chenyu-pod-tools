@@ -1,0 +1,4105 @@
+{
+    "app_dir": "/root/ComfyUI",
+    "app_type": "",
+    "model_dir": "/root/ComfyUI/models",
+    "plugin_dir": "/root/ComfyUI/custom_nodes",
+    "python": "python",
+    "python_version": "",
+    "models": [
+        {
+            "model_name": "big-lama.pt",
+            "model_id": null,
+            "sha256": "344c77bbcb158f17dd143070d1e789f38a66c04202311ae3a258ef66667a9ea9",
+            "cache_path": null,
+            "file_path": [
+                "inpaint/big-lama.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "fooocus_inpaint_head.pth",
+            "model_id": null,
+            "sha256": "32f7f838e0c6d8f13437ba8411e77a4688d77a2e34df8857e4ef4d51f6b97692",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/fooocus_inpaint_head.pth",
+            "file_path": [
+                "inpaint/fooocus_inpaint_head.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "inpaint_v26.fooocus.patch",
+            "model_id": null,
+            "sha256": "f8657a025104e22d70f9c060635d8e8c2196f433871a2f68dc40abd2171f0d59",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/inpaint_v26.fooocus.patch",
+            "file_path": [
+                "inpaint/inpaint_v26.fooocus.patch"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "MAT_Places512_G_fp16.safetensors",
+            "model_id": null,
+            "sha256": "309dd6ce6e04034dc4b6b15c7bd2a4844d158e03eb2a139e0eca6b366e40c0de",
+            "cache_path": null,
+            "file_path": [
+                "inpaint/MAT_Places512_G_fp16.safetensors",
+                "upscale_models/MAT_Places512_G_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "random_mask.safetensors",
+            "model_id": null,
+            "sha256": "066793867083310c25b0d57d300b1ecdc02cb708a155060f020be64afb2ae9c3",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/segmentation_mask_brushnet_ckpt/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "inpaint/brushnet/random_mask.safetensors",
+                "inpaint/segmentation_1.5/diffusion_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "segmentation_mask.safetensors",
+            "model_id": null,
+            "sha256": "bb94edf13c2284098a5cac01280d810abba53cf4e5f0d795ddc65ff36f0754e6",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/random_mask_brushnet_ckpt/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "inpaint/brushnet/segmentation_mask.safetensors",
+                "inpaint/random_1.5/diffusion_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "diffusion_pytorch_model.safetensors",
+            "model_id": null,
+            "sha256": "a0f186ec0351102527d462d349d6dc844e11c8f004e5513cf921b156f7fff3ac",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/segmentation_mask_brushnet_ckpt_sdxl_v0/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "inpaint/segmentation_XL/diffusion_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "69833a83b301cc41491aa0b59f3e2a056d2ef8ba756e58e9d96a81d11fc26bb5",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/segmentation_mask_brushnet_ckpt_sdxl_v0/config.json",
+            "file_path": [
+                "inpaint/segmentation_XL/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "random_mask.safetensors",
+            "model_id": null,
+            "sha256": "d968334b1e1553bbc450dd1876840732ef8726593bde51f1f79a19dc82770a55",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/random_mask_brushnet_ckpt_sdxl_v0/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "inpaint/brushnet_xl/random_mask.safetensors",
+                "inpaint/random_XL/diffusion_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "c3d8a4911c38c79a7b771b98daa1e279669766afd9cf39c1b6ba302c77922ebf",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/segmentation_mask_brushnet_ckpt/config.json",
+            "file_path": [
+                "inpaint/segmentation_1.5/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "24b02119e1655c187c6d4c0c4f032f693b45493b98840d02ee35b6690d55b4ef",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/random_mask_brushnet_ckpt_sdxl_v0/config.json",
+            "file_path": [
+                "inpaint/random_XL/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "diffusion_pytorch_model.safetensors",
+            "model_id": null,
+            "sha256": "745a3babce414c8b765c57e86412544cecdbdb0601648900d10b482256babb76",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/powerpaint/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "inpaint/powerpaint/diffusion_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model.bin",
+            "model_id": null,
+            "sha256": "15d6a233b5707d13fc7b47d763812a375fa171160e6544041fee9ee4caea6e4d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/powerpaint/pytorch_model.bin",
+            "file_path": [
+                "inpaint/powerpaint/pytorch_model.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "8cc33f7680a934558d5566409d93fda237f28330219e70482b5a142fbdcebc20",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/inpaint/brushnet/random_mask_brushnet_ckpt/config.json",
+            "file_path": [
+                "inpaint/random_1.5/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "codeformer.pth",
+            "model_id": null,
+            "sha256": "1009e537e0c2a07d4cabce6355f53cb66767cd4b4297ec7a4a64ca4b8a5684b7",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facerestore_models/codeformer.pth",
+            "file_path": [
+                "facerestore_models/codeformer.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "GFPGANv1.3.pth",
+            "model_id": null,
+            "sha256": "c953a88f2727c85c3d9ae72e2bd4846bbaf59fe6972ad94130e23e7017524a70",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facerestore_models/GFPGANv1.3.pth",
+            "file_path": [
+                "facerestore_models/GFPGANv1.3.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "GFPGANv1.4.pth",
+            "model_id": null,
+            "sha256": "e2cd4703ab14f4d01fd1383a8a8b266f9a5833dacee8e6a79d3bf21a1b6be5ad",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facerestore_models/GFPGANv1.4.pth",
+            "file_path": [
+                "facerestore_models/GFPGANv1.4.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sam_vit_h_4b8939.pth",
+            "model_id": null,
+            "sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/sams/sam_vit_h_4b8939.pth",
+            "file_path": [
+                "sams/sam_vit_h_4b8939.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sam_vit_b_01ec64.pth",
+            "model_id": null,
+            "sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/sams/sam_vit_b_01ec64.pth",
+            "file_path": [
+                "sams/sam_vit_b_01ec64.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sam_hq_vit_b.pth",
+            "model_id": null,
+            "sha256": "14a9d662cd6f5a9c2dba6d40ab0058d88d287e4a18fd6fdc6ad5fb1a3fdeaa57",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/sams/sam_hq_vit_b.pth",
+            "file_path": [
+                "sams/sam_hq_vit_b.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "mm_sd15_v3_adapter.safetensors",
+            "model_id": null,
+            "sha256": "78b7fd991066c10ffb24d6e7c89e01438be2c702568a2b5c5bf3a0371b1c854b",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_motion_lora/mm_sd15_v3_adapter.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_PanLeft.ckpt",
+            "model_id": null,
+            "sha256": "ed79025f8bea018c8925f43b6304a27e462335b6ec5e6f8a222c2726153844b3",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_PanLeft.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_PanLeft.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "shatterAnimatediff_v10.safetensors",
+            "model_id": null,
+            "sha256": "cce93279af06149db73548b9929ad1e3b2e1c150e2a0bd22ceb2c6b1354d9ca6",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/shatterAnimatediff_v10.safetensors",
+            "file_path": [
+                "animatediff_motion_lora/shatterAnimatediff_v10.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_ZoomOut.ckpt",
+            "model_id": null,
+            "sha256": "4172fb2d36410ef638ae0e29d604b66c11ee44b94db9c7cc5ee34d7f865c55d9",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_ZoomOut.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_ZoomOut.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_TiltUp.ckpt",
+            "model_id": null,
+            "sha256": "c0ee2f181fc69d7fe26e013ad5cfea11f25cb9f5e8fded3c9942b61803cd6c3d",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_TiltUp.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_ZoomIn.ckpt",
+            "model_id": null,
+            "sha256": "70ce8b9057b173b9249c48aca5d66c8aa1d8aaa040fda394e50e37f3e278195e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_ZoomIn.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_ZoomIn.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_PanRight.ckpt",
+            "model_id": null,
+            "sha256": "f4eb9154623c628c76dbd83109f125617c985490fec36ddca5464eb61ac7f6d5",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_PanRight.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_PanRight.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_RollingAnticlockwise.ckpt",
+            "model_id": null,
+            "sha256": "7ae6cbc81044895243bba9a64df9666db763a52acfd8e496c490af84e812748a",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_RollingAnticlockwise.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_RollingClockwise.ckpt",
+            "model_id": null,
+            "sha256": "361b1af8500d7fd09c2f884fac5dc0397a4323bae8fab5233443de5383d13630",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_RollingClockwise.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_RollingClockwise.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2_lora_TiltDown.ckpt",
+            "model_id": null,
+            "sha256": "09e4d5448aba4ea51b3bcd4b5d2b058ed4b47bb72d94d8c05a3ccce3368db6d9",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_motion_lora/v2_lora_TiltDown.ckpt",
+            "file_path": [
+                "animatediff_motion_lora/v2_lora_TiltDown.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "c023375966d31b3b1392764f7bd91df47098ce19f62f11b0263d8eedcf708bcd",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/clipseg-rd64-refined/config.json",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "README.md",
+            "model_id": null,
+            "sha256": "4bcf87ecfbbb8e07a01b21415a970c8b53a5283bf6872b657040d3f45c9241f7",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/README.md"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer_config.json",
+            "model_id": null,
+            "sha256": "4c75d57fd9bd0be8478ad2d6f8b9cebdd4a45338eb108547329c2b6333476ca6",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/clipseg-rd64-refined/tokenizer_config.json",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/tokenizer_config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": ".gitattributes",
+            "model_id": null,
+            "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/image2text/moondream2/.gitattributes",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.gitattributes",
+                "ella/.gitattributes"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "special_tokens_map.json",
+            "model_id": null,
+            "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/IDM-VTON/tokenizer/special_tokens_map.json",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/special_tokens_map.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model.safetensors",
+            "model_id": null,
+            "sha256": "3bfcd7b05b526f849cf18c3102fed42c48ef396377b8e11b777a691029ca1295",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "vocab.json",
+            "model_id": null,
+            "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/IDM-VTON/tokenizer/vocab.json",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/vocab.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "preprocessor_config.json",
+            "model_id": null,
+            "sha256": "4fb09ebcfd7651205ca8299b993c30088e5535ef350a72d46c5c4580eeac0440",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/clipseg-rd64-refined/preprocessor_config.json",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/preprocessor_config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "merges.txt",
+            "model_id": null,
+            "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/IDM-VTON/tokenizer/merges.txt",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/merges.txt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": ".gitignore",
+            "model_id": null,
+            "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/depthanything/.huggingface/.gitignore",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/.gitignore",
+                "photomaker/.huggingface/.gitignore"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model.safetensors.metadata",
+            "model_id": null,
+            "sha256": "d249d76d91496b5e1b8c6e1622e404c38add1c75df46c896afc8098812f96810",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/model.safetensors.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "merges.txt.lock",
+            "model_id": null,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip_vision/put_clip_vision_models_here",
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/merges.txt.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/tokenizer_config.json.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/.gitattributes.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/config.json.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/preprocessor_config.json.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/vocab.json.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/README.md.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/model.safetensors.lock",
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/special_tokens_map.json.lock",
+                "gligen/put_gligen_models_here",
+                "style_models/put_t2i_style_model_here",
+                "clip/put_clip_or_text_encoder_models_here",
+                "clip_vision/put_clip_vision_models_here",
+                "loras/put_loras_here",
+                "embeddings/put_embeddings_or_textual_inversion_concepts_here",
+                "checkpoints/put_checkpoints_here",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/9edc3be35940faf780eb39e0191d0b8a2b13c329.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/3529d5f768b8b1ccc65b80b78fb43e16069109c1.lock",
+                "blip/.locks/models--Salesforce--blip-image-captioning-large/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock",
+                "blip/models--Salesforce--blip-image-captioning-large/.no_exist/2227ac38c9f16105cb0412e7cab4759978a8fd90/added_tokens.json",
+                "blip/models--Salesforce--blip-image-captioning-large/.no_exist/2227ac38c9f16105cb0412e7cab4759978a8fd90/adapter_config.json",
+                "blip/models--Salesforce--blip-image-captioning-large/.no_exist/2227ac38c9f16105cb0412e7cab4759978a8fd90/processor_config.json",
+                "blip/models--Salesforce--blip-image-captioning-large/.no_exist/2227ac38c9f16105cb0412e7cab4759978a8fd90/generation_config.json",
+                "vae/put_vae_here",
+                "controlnet/put_controlnets_and_t2i_here",
+                "pulid/\u65b0\u5efa\u6587\u4ef6",
+                "hypernetworks/put_hypernetworks_here",
+                "upscale_models/put_esrgan_and_other_upscale_models_here",
+                "unet/put_unet_files_here",
+                "photomaker/put_photomaker_models_here",
+                "photomaker/.huggingface/download/photomaker-v1.bin.lock",
+                "vae_approx/put_taesd_encoder_pth_and_taesd_decoder_pth_here",
+                "diffusers/put_diffusers_models_here"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "vocab.json.metadata",
+            "model_id": null,
+            "sha256": "7f7190e1ee5e2968a7f92df19692b00a70df0884db6e79f187d07a69e81dac5d",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/vocab.json.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "README.md.metadata",
+            "model_id": null,
+            "sha256": "a804daefcdf197214554cef5f3ca66ba86189d5d2599f5b7d19c3a46a9f9bdd5",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/README.md.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "preprocessor_config.json.metadata",
+            "model_id": null,
+            "sha256": "afacb68b9295766a5404c50b04efa118b43bdeee3f61041067112b4623ca1ac6",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/preprocessor_config.json.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json.metadata",
+            "model_id": null,
+            "sha256": "a19d53511b43316ffb7e0d5fc11e4f235af8a9386386a5c47ce0d358f89e2856",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/config.json.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "merges.txt.metadata",
+            "model_id": null,
+            "sha256": "3d8286669ecd928a9e7b1e77a3f20ca134b411b7c166eb61a8ec4520639eaad0",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/merges.txt.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "special_tokens_map.json.metadata",
+            "model_id": null,
+            "sha256": "e2af8523c005478efef7b27e1e4c24558825c8e5dfd664b7d3f0215120eb9816",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/special_tokens_map.json.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer_config.json.metadata",
+            "model_id": null,
+            "sha256": "480fa77b61df0e2db5657a7aaf880381517296a6d58e7ce0f419f952f9aba5fe",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/tokenizer_config.json.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": ".gitattributes.metadata",
+            "model_id": null,
+            "sha256": "21cc34e6ed3bf35f97ef2f088f91e40c891c82c3385dbff6c117a5ec2edb6434",
+            "cache_path": null,
+            "file_path": [
+                "clip_seg/clipseg-rd64-refined-fp16/.huggingface/download/.gitattributes.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model.bin",
+            "model_id": null,
+            "sha256": "d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767",
+            "cache_path": null,
+            "file_path": [
+                "clip_interrogator/Salesforce/blip-image-captioning-base/pytorch_model.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "gligen_sd14_textbox_pruned_fp16.safetensors",
+            "model_id": null,
+            "sha256": "3183c006351c033c3b183ac0a2c35f72a79c9ec0fcba3df9a05afd4320d116b2",
+            "cache_path": null,
+            "file_path": [
+                "gligen/gligen_sd14_textbox_pruned_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "detection_Resnet50_Final.pth",
+            "model_id": null,
+            "sha256": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facedetection/detection_Resnet50_Final.pth",
+            "file_path": [
+                "facedetection/detection_Resnet50_Final.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "parsing_parsenet.pth",
+            "model_id": null,
+            "sha256": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facedetection/parsing_parsenet.pth",
+            "file_path": [
+                "facedetection/parsing_parsenet.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "yolov5l-face.pth",
+            "model_id": null,
+            "sha256": "1ba9d2125fda4d823df5152b9fc2903c59aa76c0d3771e02bcf13a56a282cf96",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/facedetection/yolov5l-face.pth",
+            "file_path": [
+                "facedetection/yolov5l-face.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "selfie_multiclass_256x256.tflite",
+            "model_id": null,
+            "sha256": "c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/mediapipe/selfie_multiclass_256x256.tflite",
+            "file_path": [
+                "mediapipe/selfie_multiclass_256x256.tflite"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v1-inpainting-inference.yaml",
+            "model_id": null,
+            "sha256": "6a180ba807940815028e48e41cdd0fb3c10d0d2b2a32249c023b2d4c9bf45c5c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v1-inpainting-inference.yaml",
+            "file_path": [
+                "configs/v1-inpainting-inference.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v1-inference.yaml",
+            "model_id": null,
+            "sha256": "20b7f0acae54d1f88384a6ca15b5d62c0ee4fbbca07ff72f3761fe936083210d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v1-inference.yaml",
+            "file_path": [
+                "configs/v1-inference.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2-inpainting-inference.yaml",
+            "model_id": null,
+            "sha256": "821a51ee6a8f3a62e7f2002557fcb4f4ae97a2ab3cb3fb85942897d536fa8b2c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v2-inpainting-inference.yaml",
+            "file_path": [
+                "configs/v2-inpainting-inference.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2-inference-v.yaml",
+            "model_id": null,
+            "sha256": "72b092aadfe146f5d3f395a720c0aa3b2354b2095e3f10dc18f0e9716d286dcb",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v2-inference-v.yaml",
+            "file_path": [
+                "configs/v2-inference-v.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "anything_v3.yaml",
+            "model_id": null,
+            "sha256": "8d81ca32367c7b3a809e02c4259504aa8d77a2694b52e7b793f9695e6cc75107",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v1-inference_clip_skip_2.yaml",
+            "file_path": [
+                "configs/anything_v3.yaml",
+                "configs/v1-inference_clip_skip_2.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2-inference_fp32.yaml",
+            "model_id": null,
+            "sha256": "54c86f69043e2dda671c89bce2e8aa59d535b01ffb436faf5597ca75c85ceaff",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v2-inference_fp32.yaml",
+            "file_path": [
+                "configs/v2-inference_fp32.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2-inference.yaml",
+            "model_id": null,
+            "sha256": "ec4094bd36ef558cd9d52c9985471ac91d2c0c5bd071717411a4ccd5adf4f311",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v2-inference.yaml",
+            "file_path": [
+                "configs/v2-inference.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v1-inference_fp16.yaml",
+            "model_id": null,
+            "sha256": "25727b19592d3c5ab44299089bae95d6989e98a222228f4dc0ee5c6200188fc0",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v1-inference_fp16.yaml",
+            "file_path": [
+                "configs/v1-inference_fp16.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v2-inference-v_fp32.yaml",
+            "model_id": null,
+            "sha256": "6b8ed358d0197cc4f631199dd7107955a0e7772aa17a140c8422f08f60042df5",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v2-inference-v_fp32.yaml",
+            "file_path": [
+                "configs/v2-inference-v_fp32.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v1-inference_clip_skip_2_fp16.yaml",
+            "model_id": null,
+            "sha256": "5de4cdd258908cac4d9d6d3250cdd9c6feb2f0ccff745e3e3195b25bd6a3af71",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/configs/v1-inference_clip_skip_2_fp16.yaml",
+            "file_path": [
+                "configs/v1-inference_clip_skip_2_fp16.yaml"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "person_yolov8m-seg.pt",
+            "model_id": null,
+            "sha256": "9d881ec50b831f546e37977081b18f4e3bf65664aec163f97a311b0955499795",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ultralytics/segm/person_yolov8m-seg.pt",
+            "file_path": [
+                "ultralytics/segm/person_yolov8m-seg.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "face_yolov8m.pt",
+            "model_id": null,
+            "sha256": "f02b8a23e6f12bd2c1b1f6714f66f984c728fa41ed749d033e7d6dea511ef70c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ultralytics/bbox/face_yolov8m.pt",
+            "file_path": [
+                "ultralytics/bbox/face_yolov8m.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "hand_yolov8n.pt",
+            "model_id": null,
+            "sha256": "f3f23b865741cc8373a76dfac31a71ffd71356a480ca43266f294815b608e174",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ultralytics/bbox/hand_yolov8n.pt",
+            "file_path": [
+                "ultralytics/bbox/hand_yolov8n.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "face_yolov8n_v2.pt",
+            "model_id": null,
+            "sha256": "a1494cc31c9e8baf49f19277f456f4056f5fc770887aa394887472bf1a49386c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ultralytics/bbox/face_yolov8n_v2.pt",
+            "file_path": [
+                "ultralytics/bbox/face_yolov8n_v2.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "hand_yolov8s.pt",
+            "model_id": null,
+            "sha256": "5c4faf8d17286ace2c3d3346c6d0d4a0c8d62404955263a7ae95c1dd7eb877af",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ultralytics/bbox/hand_yolov8s.pt",
+            "file_path": [
+                "ultralytics/bbox/hand_yolov8s.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "iclight_sd15_fbc.safetensors",
+            "model_id": null,
+            "sha256": "bb8ccedaa4944b16cfa8356afcbc2c2174cc4c4af57de19124ae0cddd0d96947",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/unet/IC-Light/iclight_sd15_fbc.safetensors",
+            "file_path": [
+                "iclight/iclight_sd15_fbc.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "iclight_sd15_fc.safetensors",
+            "model_id": null,
+            "sha256": "a033fbaaa2f3f7859fa6a4477ee63ebbf9c116bf3569d5811856d2807f3468cd",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/unet/IC-Light/iclight_sd15_fc.safetensors",
+            "file_path": [
+                "iclight/iclight_sd15_fc.safetensors",
+                "unet/iclight_sd15_fc.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "vae_transparent_decoder.safetensors",
+            "model_id": null,
+            "sha256": "59dc8feefe40d26b6cb7186aed7af70c60d94ac4f9db8ebe7f121a01ba27a2fc",
+            "cache_path": null,
+            "file_path": [
+                "layer_model/vae_transparent_decoder.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "layer_xl_transparent_conv.safetensors",
+            "model_id": null,
+            "sha256": "5ee958d80dcd515fa7ac915274c536fadd3db5d919adeb5ff45107b6169aacc7",
+            "cache_path": null,
+            "file_path": [
+                "layer_model/layer_xl_transparent_conv.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "groundingdino_swinb_cogcoor.pth",
+            "model_id": null,
+            "sha256": "46270f7a822e6906b655b729c90613e48929d0f2bb8b9b76fd10a856f3ac6ab7",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/grounding-dino/groundingdino_swinb_cogcoor.pth",
+            "file_path": [
+                "grounding-dino/groundingdino_swinb_cogcoor.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "GroundingDINO_SwinB.cfg.py",
+            "model_id": null,
+            "sha256": "6c6a3b89b6df23fd90d247b21211dceffca3ea82d96c23859fdc7f28958e985b",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/grounding-dino/GroundingDINO_SwinB.cfg.py",
+            "file_path": [
+                "grounding-dino/GroundingDINO_SwinB.cfg.py"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "GroundingDINO_SwinT_OGC.cfg.py",
+            "model_id": null,
+            "sha256": "172e80017f9395668a9cb5d1b8bd9d061c0e360471c6ed673c83b69bb14399f1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py",
+            "file_path": [
+                "grounding-dino/GroundingDINO_SwinT_OGC.cfg.py"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "groundingdino_swint_ogc.pth",
+            "model_id": null,
+            "sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/grounding-dino/groundingdino_swint_ogc.pth",
+            "file_path": [
+                "grounding-dino/groundingdino_swint_ogc.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "mm_sd_v15_v2.ckpt",
+            "model_id": null,
+            "sha256": "69ed0f5fef82b110aca51bcab73b21104242bc65d6ab4b8b2a2a94d31cad1bf0",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_models/mm_sd_v15_v2.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "diffloss-epoch-2.ckpt",
+            "model_id": null,
+            "sha256": "dbb620436df15d7259e4175ffcd96de425e8f5c5918c746104601bba88955b0f",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_models/diffloss-epoch-2.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "AnimateLCM_sd15_t2v.ckpt",
+            "model_id": null,
+            "sha256": "b46c3de62e5696af72c4056e3cdcbea12fbc19581c0aad7b6f2b027851148f5f",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/animatediff_models/animatediffLCMMotion_v10.ckpt",
+            "file_path": [
+                "animatediff_models/AnimateLCM_sd15_t2v.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v3_sd15_mm.ckpt",
+            "model_id": null,
+            "sha256": "2412711886f61091846f53204aabc38aa6e09356d62a9808abe4daa802168343",
+            "cache_path": null,
+            "file_path": [
+                "animatediff_models/v3_sd15_mm.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter_sd15.safetensors",
+            "model_id": null,
+            "sha256": "289b45f16d043d0bf542e45831f971dcdaabe18b656f11e86d9dfba7e9ee3369",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter_sd15.safetensors",
+            "file_path": [
+                "ipadapter/ip-adapter_sd15.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid_sdxl.bin",
+            "model_id": null,
+            "sha256": "f455fed24e207c878ec1e0466b34a969d37bab857c5faa4e8d259a0b4ff63d7e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-faceid_sdxl.bin",
+            "file_path": [
+                "ipadapter/ip-adapter-faceid_sdxl.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-plus_sdxl_vit-h.safetensors",
+            "model_id": null,
+            "sha256": "3f5062b8400c94b7159665b21ba5c62acdcd7682262743d7f2aefedef00e6581",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-plus_sdxl_vit-h.safetensors",
+            "file_path": [
+                "ipadapter/ip-adapter-plus_sdxl_vit-h.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid-plusv2_sdxl.bin",
+            "model_id": null,
+            "sha256": "c6945d82b543700cc3ccbb98d363b837e9c596281607857c74b713a876daf5fb",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-faceid-plusv2_sdxl.bin",
+            "file_path": [
+                "ipadapter/ip-adapter-faceid-plusv2_sdxl.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid-plusv2_sd15.bin",
+            "model_id": null,
+            "sha256": "26d0d86a1d60d6cc811d3b8862178b461e1eeb651e6fe2b72ba17aa95411e313",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-faceid-plusv2_sd15.bin",
+            "file_path": [
+                "ipadapter/ip-adapter-faceid-plusv2_sd15.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter_sdxl_vit-h.safetensors",
+            "model_id": null,
+            "sha256": "ebf05d918348aec7abb02a5e9ecef77e0aaea6914a5c4ea13f50d45eb1681831",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter_sdxl_vit-h.safetensors",
+            "file_path": [
+                "ipadapter/ip-adapter_sdxl_vit-h.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid-portrait_sd15.bin",
+            "model_id": null,
+            "sha256": "68570f3c14fe125b00d4abf416af33d8b13bb496f4e55af2eb5d0a6017ee99a4",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-faceid-portrait_sd15.bin",
+            "file_path": [
+                "ipadapter/ip-adapter-faceid-portrait_sd15.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-plus_sd15.safetensors",
+            "model_id": null,
+            "sha256": "a1c250be40455cc61a43da1201ec3f1edaea71214865fb47f57927e06cbe4996",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ipadapter/ip-adapter-plus_sd15.safetensors",
+            "file_path": [
+                "ipadapter/ip-adapter-plus_sd15.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ViT-L-14.pt",
+            "model_id": null,
+            "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip_interrogator/ViT-L-14.pt",
+            "file_path": [
+                "clip/ViT-L-14.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model.fp16.safetensors",
+            "model_id": null,
+            "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+            "cache_path": null,
+            "file_path": [
+                "clip/model.fp16.safetensors",
+                "clip/Brushnet_clip_model.fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "t5xxl_fp8_e4m3fn.safetensors",
+            "model_id": null,
+            "sha256": "7d330da4816157540d6bb7838bf63a0f02f573fc48ca4d8de34bb0cbfd514f09",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/t5xxl_fp8_e4m3fn.safetensors",
+            "file_path": [
+                "clip/sd3/t5xxl_fp8_e4m3fn.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "clip_g.safetensors",
+            "model_id": null,
+            "sha256": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/clip_g.safetensors",
+            "file_path": [
+                "clip/sd3/clip_g.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "clip_l.safetensors",
+            "model_id": null,
+            "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip/clip_l.safetensors",
+            "file_path": [
+                "clip/sd3/clip_l.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "open_clip_pytorch_model.safetensors",
+            "model_id": null,
+            "sha256": "0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5",
+            "cache_path": null,
+            "file_path": [
+                "clip_vision/open_clip_pytorch_model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "SD1.5_model.safetensors",
+            "model_id": null,
+            "sha256": "6ca9667da1ca9e0b0f75e46bb030f7e011f44f86cbfb8d5a36590fcd7507b030",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/clip_vision/SD1.5/model.safetensors",
+            "file_path": [
+                "clip_vision/SD1.5_model.safetensors",
+                "clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid_sdxl_lora.safetensors",
+            "model_id": null,
+            "sha256": "4fcf93d6e8dc8dd18f5f9e51c8306f369486ed0aa0780ade9961308aff7f0d64",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/ipa/ip-adapter-faceid_sdxl_lora.safetensors",
+            "file_path": [
+                "loras/ip-adapter-faceid_sdxl_lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "add_detail.safetensors",
+            "model_id": null,
+            "sha256": "47aaaf0d2945ca937151d61304946dd229b3f072140b85484bc93e38f2a6e2f7",
+            "cache_path": null,
+            "file_path": [
+                "loras/add_detail.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "LogoRedmondV2-Logo-LogoRedmAF.safetensors",
+            "model_id": null,
+            "sha256": "55f7f408831c34f84857b1a728d1dd70b76083d80e7279e22097ca5ac4430e13",
+            "cache_path": null,
+            "file_path": [
+                "loras/XL/LogoRedmondV2-Logo-LogoRedmAF.safetensors",
+                "loras/XL/Logo.Redmond - Logo Lora for SDXL v2.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "lorasAdamXL\u4e28\u767e\u53d8\u9f99\u5e74\u4e28\u65b0\u4e2d\u5f0f\u513f\u7ae5\u6444\u5f71 \u4e28loong\u5e74_v1.safetensors",
+            "model_id": null,
+            "sha256": "c31a7a31e4f2c66ce0512d0abec786dd373cc3886efb5b3bf716eb50e1b22d16",
+            "cache_path": null,
+            "file_path": [
+                "loras/XL/lorasAdamXL\u4e28\u767e\u53d8\u9f99\u5e74\u4e28\u65b0\u4e2d\u5f0f\u513f\u7ae5\u6444\u5f71 \u4e28loong\u5e74_v1.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u3010\u670d\u88c5\u62c6\u5206\u3011 XUER_V1.safetensors",
+            "model_id": null,
+            "sha256": "49308ae5071f0660d28ea4d204500eea5e044fc1451b0738f1184159198d4e26",
+            "cache_path": null,
+            "file_path": [
+                "loras/XL/\u3010\u670d\u88c5\u62c6\u5206\u3011 XUER_V1.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "StickersRedmond.safetensors",
+            "model_id": null,
+            "sha256": "927a840722d1ac9103223c09da55cc3ae750300e1c0e22a15ffcf460ac6f8a56",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/\u8d34\u7eb8/StickersRedmond.safetensors",
+            "file_path": [
+                "loras/XL/StickersRedmond.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u6f2b\u753b\u771f\u4eba\u5938\u5f20\u98ce\u683c_v1.0.safetensors",
+            "model_id": null,
+            "sha256": "bb22d3dbf1aedeaafddafde5981b817c2b0f2ddbcd6c3c20e5f0e7d88429dbab",
+            "cache_path": null,
+            "file_path": [
+                "loras/XL/\u6f2b\u753b\u771f\u4eba\u5938\u5f20\u98ce\u683c_v1.0.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "BDiconSD3_V1.0(icon).safetensors",
+            "model_id": null,
+            "sha256": "10a9409095248ca212ab92f8ffdeaa5fe40aa6c84c02374e2dd4b70aff67fffb",
+            "cache_path": null,
+            "file_path": [
+                "loras/SD3/BDiconSD3_V1.0(icon).safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "fix_hands.pt",
+            "model_id": null,
+            "sha256": "d98c4828468c8d5831c439f49914672710f63219a561b191670fa54d542fa57b",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/fix_hands.pt",
+            "file_path": [
+                "loras/sdxl_sliders/fix_hands.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "age.pt",
+            "model_id": null,
+            "sha256": "8c1c096f7cc1109b4072cbc604c811a5f0ff034fc0f6dc7cf66a558550aa4890",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/age.pt",
+            "file_path": [
+                "loras/sdxl_sliders/age.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "happy_v2.safetensors",
+            "model_id": null,
+            "sha256": "b7886c06760d75ff78b12b515d212e444fe5cf49e41c52a70ea028e6a4a4c0e0",
+            "cache_path": null,
+            "file_path": [
+                "loras/sdxl_sliders/happy_v2.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "chubby.pt",
+            "model_id": null,
+            "sha256": "7a70fb34187821a06a39bf36baa400090a32758d56771c3f54fcc4d9089f0d88",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/chubby.pt",
+            "file_path": [
+                "loras/sdxl_sliders/chubby.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "eyesize.pt",
+            "model_id": null,
+            "sha256": "8fdffa3e7788f4bd6be9a2fe3b91957b4f35999fc9fa19eabfb49f92fbf6650b",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/eyesize.pt",
+            "file_path": [
+                "loras/sdxl_sliders/eyesize.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "smiling.pt",
+            "model_id": null,
+            "sha256": "6430ab47393ba15222ea0988c3479f547c8b59f93a41024bcddd7121ef7147d1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/smiling.pt",
+            "file_path": [
+                "loras/sdxl_sliders/smiling.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "cartoon_style.pt",
+            "model_id": null,
+            "sha256": "e07c30e4f82f709a474ae11dc5108ac48f81b6996b937757c8dd198920ea9b4d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/cartoon_style.pt",
+            "file_path": [
+                "loras/sdxl_sliders/cartoon_style.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "long_hair.pt",
+            "model_id": null,
+            "sha256": "e93dba27fa012bba0ea468eb2f9877ec0934424a9474e30ac9e94ea0517822ca",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/xl_sliders/long_hair.pt",
+            "file_path": [
+                "loras/sdxl_sliders/long_hair.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "lcm-lora-sdxl.safetensors",
+            "model_id": null,
+            "sha256": "c3dbf7eb26dd00ae6b6b95da69be9f1cb95a3b2c5bcf9be82323227a19b91329",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/sdxl/sdxl_lcm_lora.safetensors",
+            "file_path": [
+                "loras/Fast_model/lcm-lora-sdxl.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Hyper-SD15-8steps-CFG-lora.safetensors",
+            "model_id": null,
+            "sha256": "f6123d5b950d5250ab6c33600e27f4dcf71b3099ebf888685e01e9e8117ce482",
+            "cache_path": null,
+            "file_path": [
+                "loras/Fast_model/Hyper-SD15-8steps-CFG-lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "AnimateLCM_sd15_t2v_lora.safetensors",
+            "model_id": null,
+            "sha256": "8f90d840e075ff588a58e22c6586e2ae9a6f7922996ee6649a7f01072333afe4",
+            "cache_path": null,
+            "file_path": [
+                "loras/Fast_model/AnimateLCM_sd15_t2v_lora.safetensors",
+                "loras/Fast_model/lcm-lora-sd1_5.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sdxl_lightning_4step_lora.safetensors",
+            "model_id": null,
+            "sha256": "bf56cf2657efb15e465d81402ed481d1e11c4677e4bcce1bc11fe71ad8506b79",
+            "cache_path": null,
+            "file_path": [
+                "loras/Fast_model/sdxl_lightning_4step_lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Hyper-SDXL-8steps-CFG-lora.safetensors",
+            "model_id": null,
+            "sha256": "55b51334c85061afff5eff7c550b61963c8b8607a5868bbe4f26db49374719b1",
+            "cache_path": null,
+            "file_path": [
+                "loras/Fast_model/Hyper-SDXL-8steps-CFG-lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Background Detail Enhanced Simplified-\u80cc\u666f\u7ec6\u8282\u589e\u5f3a-\u7b80\u5316-v2.0.safetensors",
+            "model_id": null,
+            "sha256": "d43400b1c7f57695bd5797b3a84ffb0f62e6be3f8919c5fe45b13597cd7d2f90",
+            "cache_path": null,
+            "file_path": [
+                "loras/SD1.5/Background Detail Enhanced Simplified-\u80cc\u666f\u7ec6\u8282\u589e\u5f3a-\u7b80\u5316-v2.0.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "anxiang-\u6697\u9999-anxiang.safetensors",
+            "model_id": null,
+            "sha256": "b982e1b5ef292436e31f02c550a81342bb45427546d56bdabd81e9530fd61f19",
+            "cache_path": null,
+            "file_path": [
+                "loras/SD1.5/anxiang-\u6697\u9999-anxiang.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "lorasmore_details.safetensors",
+            "model_id": null,
+            "sha256": "d9cf2f88dec53a8dd8c09aba2b1d67963b265ebdf8255660f5bcd7f1c8edba33",
+            "cache_path": null,
+            "file_path": [
+                "loras/SD1.5/lorasmore_details.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u7131\u843d\u7eb1_v1.0.safetensors",
+            "model_id": null,
+            "sha256": "db496519ff3803edbafd767a5f629f1937d53c40e372b53b979d11185c25cbe0",
+            "cache_path": null,
+            "file_path": [
+                "loras/SD1.5/\u7131\u843d\u7eb1_v1.0.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "v3_sd15_adapter.ckpt",
+            "model_id": null,
+            "sha256": "fd2d8e26480f6ab013c1e6af86fdf1dedbb1ed5baf850ccd5f365f39d6c3472c",
+            "cache_path": null,
+            "file_path": [
+                "loras/animatediff/v3_sd15_adapter.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "XL\u4e5d\u54f2Lzp_01.png",
+            "model_id": null,
+            "sha256": "54eacaae85f2429a7f612284bb4fa9ddd9f10c348a11b813152710dfed2a90d5",
+            "cache_path": null,
+            "file_path": [
+                "loras/\u8001\u7167\u7247/XL\u4e5d\u54f2Lzp_01.png"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "XL\u4e5d\u54f2Lzp_01.safetensors",
+            "model_id": null,
+            "sha256": "2163f197782ddab12aa647e7acb542a860815eb08701aa9dcefaf877b04bbd45",
+            "cache_path": null,
+            "file_path": [
+                "loras/\u8001\u7167\u7247/XL\u4e5d\u54f2Lzp_01.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "FLUX1\u8d85\u5199\u5b9e\u9ed1\u609f\u7a7a--V1.safetensors",
+            "model_id": null,
+            "sha256": "271195eae690d9514d2e98bcd752680d5cbeb78b38845c28ac9a4fc24aea26a9",
+            "cache_path": null,
+            "file_path": [
+                "loras/flux1/FLUX1\u8d85\u5199\u5b9e\u9ed1\u609f\u7a7a--V1.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "FLUX1\u8d85\u5199\u5b9e\u9ed1\u609f\u7a7a--V1.png",
+            "model_id": null,
+            "sha256": "1f1d61ad170064959db4f9347838a4624c681a7901bd50139e8ac0862ecbe29e",
+            "cache_path": null,
+            "file_path": [
+                "loras/flux1/FLUX1\u8d85\u5199\u5b9e\u9ed1\u609f\u7a7a--V1.png"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid-plusv2_sd15_lora.safetensors",
+            "model_id": null,
+            "sha256": "8abff87a15a049f3e0186c2e82c1c8e77783baf2cfb63f34c412656052eb57b0",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/ipa/ip-adapter-faceid-plusv2_sd15_lora.safetensors",
+            "file_path": [
+                "loras/FaceID/ip-adapter-faceid-plusv2_sd15_lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+            "model_id": null,
+            "sha256": "f24b4bb2dad6638a09c00f151cde84991baf374409385bcbab53c1871a30cb7b",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/loras/ipa/ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+            "file_path": [
+                "loras/FaceID/ip-adapter-faceid-plusv2_sdxl_lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "negative_hand-neg.pt",
+            "model_id": null,
+            "sha256": "73b524a2da121eb1b7ad04dea11da286277813120700ff8f1d8522516f7b30ab",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/embeddings/negative_hand-neg.pt",
+            "file_path": [
+                "embeddings/negative_hand-neg.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ng_deepnegative_v1_75t.pt",
+            "model_id": null,
+            "sha256": "54e7e4826d53949a3d0dde40aea023b1e456a618c608a7630e3999fd38f93245",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/embeddings/ng_deepnegative_v1_75t.pt",
+            "file_path": [
+                "embeddings/ng_deepnegative_v1_75t.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "FastNegativeV2.pt",
+            "model_id": null,
+            "sha256": "a7465e7cc2a2a27571ee020053f307b5af54e6b60a0b0235d773f6bd55f7d078",
+            "cache_path": null,
+            "file_path": [
+                "embeddings/FastNegativeV2.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "badhandv4.pt",
+            "model_id": null,
+            "sha256": "5e40d722fc3d0c2decb62debfaf8058db30ccdae9ab00ff64b183907b435708e",
+            "cache_path": null,
+            "file_path": [
+                "embeddings/badhandv4.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "EasyNegative.safetensors",
+            "model_id": null,
+            "sha256": "c74b4e810b030f6b75fde959e2db678c268d07115b85356d3c0138ba5eb42340",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/embeddings/easynegative.safetensors",
+            "file_path": [
+                "embeddings/EasyNegative.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "big-lama.pt",
+            "model_id": null,
+            "sha256": "7ba7aa7ac37a4d41fdbbeba3a2af7ead18058552997e3a3cd1a3b2210c9e6b4c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/lama/big-lama.pt",
+            "file_path": [
+                "lama/big-lama.pt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Lz16K+\u5149\u5b66\u5f71\u50cf\u771f\u5b9e\u4eba\u50cf\u6444\u5f71\u5927\u8d5b\u4f5c\u54c1_V1.0-8G\u7248.jpg",
+            "model_id": null,
+            "sha256": "2f5e078aa31dc8f08db51d531f03297e4503240ef5e38d6262919bc09ae6aa4f",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/Lz16K+\u5149\u5b66\u5f71\u50cf\u771f\u5b9e\u4eba\u50cf\u6444\u5f71\u5927\u8d5b\u4f5c\u54c1_V1.0-8G\u7248.jpg"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "A2D\u5361\u901a.safetensors",
+            "model_id": null,
+            "sha256": "ec41daaf79610667f045ffcb6d72060991f455e4cbd035107f3ccbb9f4066279",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/A2D\u5361\u901a.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "svd_xt.safetensors",
+            "model_id": null,
+            "sha256": "b2652c23d64a1da5f14d55011b9b6dce55f2e72e395719f1cd1f8a079b00a451",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/svd/svd_xt.safetensors",
+            "file_path": [
+                "checkpoints/svd_xt.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "dreamshaper_8.jpg",
+            "model_id": null,
+            "sha256": "ed063f496e36b4495669dc8b8eb637e95dd2a5d0b712c07ef263baec2bda3fef",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/dreamshaper_8.jpg"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u771f\u4eba\u4e5d\u54f2\u4e13\u5c5e.safetensors",
+            "model_id": null,
+            "sha256": "bbbfd0d3aa6121f1b5335a299991f1ce0dd0a371dac47e1379ac5160addfe390",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/\u771f\u4eba\u4e5d\u54f2\u4e13\u5c5e.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "majicMIX realistic \u9ea6\u6a58\u5199\u5b9e_v7.safetensors",
+            "model_id": null,
+            "sha256": "7c819b6d13663ed720c2254f4fe18373107dfef2448d337913c8fc545640881e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sd1.5/majicmixRealistic_v7.safetensors",
+            "file_path": [
+                "checkpoints/majicMIX realistic \u9ea6\u6a58\u5199\u5b9e_v7.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "A2D\u5361\u901a.preview.png",
+            "model_id": null,
+            "sha256": "4e46abf25092afe6fab285786b4f41ac79490026f8b4adce8a6fe15f6c875a04",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/A2D\u5361\u901a.preview.png"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u4e5d\u54f2\u73b0\u5b9eXL.safetensors",
+            "model_id": null,
+            "sha256": "4496b36d48bfd7cfe4e5dbce3485db567bcefa2bef7238d290dbd45612125083",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sdxl/dreamshaperXL_v21TurboDPMSDE.safetensors",
+            "file_path": [
+                "checkpoints/\u4e5d\u54f2\u73b0\u5b9eXL.safetensors",
+                "checkpoints/XL/dreamshaper8S 2FXL_v2.1Turbo.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Lz16K+\u5149\u5b66\u5f71\u50cf\u771f\u5b9e\u4eba\u50cf\u6444\u5f71\u5927\u8d5b\u4f5c\u54c1_V1.0-8G\u7248.safetensors",
+            "model_id": null,
+            "sha256": "d9005dd07aa473d2a8cdfe300dbe114fee3278e3ab8cd2743ad3f33aa66a963e",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/Lz16K+\u5149\u5b66\u5f71\u50cf\u771f\u5b9e\u4eba\u50cf\u6444\u5f71\u5927\u8d5b\u4f5c\u54c1_V1.0-8G\u7248.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "dreamshaper_8.safetensors",
+            "model_id": null,
+            "sha256": "879db523c30d3b9017143d56705015e15a2cb5628762c11d086fed9538abd7fd",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sd1.5/dreamshaper_8.safetensors",
+            "file_path": [
+                "checkpoints/dreamshaper_8.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "juggernautXL_v9Rdphoto2Lightning.safetensors",
+            "model_id": null,
+            "sha256": "c8df560d2992ac04299412be6a36fa53a4e7a1b74f27b94867ad3f84f4b425a5",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sdxl/juggernautXL_v9Rdphoto2Lightning.safetensors",
+            "file_path": [
+                "checkpoints/Juggernaut-XL/juggernautXL_v9Rdphoto2Lightning.safetensors",
+                "checkpoints/XL/juggernautXL_v9-Lightning_4S_V9 + RDPhoto 2.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+            "model_id": null,
+            "sha256": "c9e3e68f89b8e38689e1097d4be4573cf308de4e3fd044c64ca697bdb4aa8bca",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sdxl/juggernautXL_v9Rundiffusionphoto2.safetensors",
+            "file_path": [
+                "checkpoints/Juggernaut-XL/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "robmixCosxlEdit_cosxlEdit10.preview.png",
+            "model_id": null,
+            "sha256": "de086619bcd3c4fbd48dd6c3777612a33fe13d963f192adc9661e903e3ddeea5",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/\u7279\u6b8a\u6a21\u578b/robmixCosxlEdit_cosxlEdit10.preview.png"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "robmixCosxlEdit_cosxlEdit10.safetensors",
+            "model_id": null,
+            "sha256": "b76ce858af03b2b78b7177abdaaf720d663dea873c38a36738740183956f4661",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/\u7279\u6b8a\u6a21\u578b/robmixCosxlEdit_cosxlEdit10.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "dynamicrafter_1024_v1_bf16.safetensors",
+            "model_id": null,
+            "sha256": "e09521408b4630d95f6fde2acb1f2e9e465a2b6a15f62d5806f9dd0182ad97e0",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/dy/dynamicrafter_1024_v1_bf16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "dreamshaper8S 2FXL_v2.1Turbo.jpg",
+            "model_id": null,
+            "sha256": "856d07ba85c0899796d6cbad89bafb870652312f76ec679e007f006b835ed1cc",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/XL/dreamshaper8S 2FXL_v2.1Turbo.jpg"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "juggernautXL_v9-Lightning_4S_V9 + RDPhoto 2.jpg",
+            "model_id": null,
+            "sha256": "06e8902afb3aae64080f24bae17b120ce81ffb76cd2405d771ee03a3213ad6c8",
+            "cache_path": null,
+            "file_path": [
+                "checkpoints/XL/juggernautXL_v9-Lightning_4S_V9 + RDPhoto 2.jpg"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sd3_medium.safetensors",
+            "model_id": null,
+            "sha256": "cc236278d28c8c3eccb8e21ee0a67ebed7dd6e9ce40aa9de914fa34e8282f191",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/sd3/sd3_medium.safetensors",
+            "file_path": [
+                "checkpoints/SD3/sd3_medium.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "SUPIR-v0F.ckpt",
+            "model_id": null,
+            "sha256": "9d8906255e2a2cc97b52d95d575461eca2a8971647d5e3e763291965c3a35314",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/SUPIR/SUPIR-v0F.ckpt",
+            "file_path": [
+                "checkpoints/SUPIR/SUPIR-v0F.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "SUPIR-v0Q.ckpt",
+            "model_id": null,
+            "sha256": "d7f418398bb024d0d3c779c4ee4e9f171eb072306093f5bcfb2bf096aa2738f8",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/checkpoints/SUPIR/SUPIR-v0Q.ckpt",
+            "file_path": [
+                "checkpoints/SUPIR/SUPIR-v0Q.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "main",
+            "model_id": null,
+            "sha256": "24c7f7d0d97d87177e36c153cef7fa02daeb69f291d8609b68587d4303411e9c",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/refs/main"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer.json",
+            "model_id": null,
+            "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/tokenizer.json",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/688882a79f44442ddc1f60d70334a7ff5df0fb47"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer_config.json",
+            "model_id": null,
+            "sha256": "3169065562f0c7f9d8d046e797d1bf786f267defa3a52ad60faf2631d23a1937",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/tokenizer_config.json",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/3529d5f768b8b1ccc65b80b78fb43e16069109c1"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "cc1da94d8a57fe398a9fcb4abbf794237c168ee58d2015a106754fab9b008b17",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/config.json",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "preprocessor_config.json",
+            "model_id": null,
+            "sha256": "0aa66e2e9ac3ea3b5cd4388c35072e22db4e1cc1f96c7872bed07749c712ade1",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/preprocessor_config.json",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/9edc3be35940faf780eb39e0191d0b8a2b13c329"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "vocab.txt",
+            "model_id": null,
+            "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/bert-base-uncased/vocab.txt",
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/vocab.txt",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model.safetensors",
+            "model_id": null,
+            "sha256": "ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/model.safetensors",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "special_tokens_map.json",
+            "model_id": null,
+            "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+            "cache_path": null,
+            "file_path": [
+                "blip/models--Salesforce--blip-image-captioning-large/snapshots/2227ac38c9f16105cb0412e7cab4759978a8fd90/special_tokens_map.json",
+                "blip/models--Salesforce--blip-image-captioning-large/blobs/a8b3208c2884c4efb86e49300fdd3dc877220cdf"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sdxl-vae-fp16-fix.safetensors",
+            "model_id": null,
+            "sha256": "235745af8d86bf4a4c1b5b4f529868b37019a10f7c0b2e79ad0abca3a22bc6e1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae/sdxl/sdxl_vae_madebyollin.safetensors",
+            "file_path": [
+                "vae/sdxl-vae-fp16-fix.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ClearVAE-Variant.safetensors",
+            "model_id": null,
+            "sha256": "4809659b70d67d314c45062ece33a7f9f8abc9aaf13805173a129cad2664e091",
+            "cache_path": null,
+            "file_path": [
+                "vae/ClearVAE-Variant.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "vae-ft-mse-840000-ema-pruned.safetensors",
+            "model_id": null,
+            "sha256": "735e4c3a447a3255760d7f86845f09f937809baa529c17370d83e4c3758f3c75",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae/sd1.5/vae-ft-mse-840000-ema-pruned.safetensors",
+            "file_path": [
+                "vae/vae-ft-mse-840000-ema-pruned.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ClearVAE.safetensors",
+            "model_id": null,
+            "sha256": "600345c503784cd77536d714f0e4c43f9e1fa4379007e730d54c454c66ee36db",
+            "cache_path": null,
+            "file_path": [
+                "vae/ClearVAE.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ae.sft",
+            "model_id": null,
+            "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae/ae.sft",
+            "file_path": [
+                "vae/ae.sft"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter_instant_id_sdxl.bin",
+            "model_id": null,
+            "sha256": "02b3618e36d803784166660520098089a81388e61a93ef8002aa79a5b1c546e1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/instantid/SDXL/ip-adapter.bin",
+            "file_path": [
+                "instantid/ip-adapter_instant_id_sdxl.bin",
+                "instantid/InstantID_ip-adapter.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "2480c42f363d712faae8d0e17cb850a5d1e4cafc232fbd022b1d43eee45234eb",
+            "cache_path": null,
+            "file_path": [
+                "instantid/config.json",
+                "controlnet/instantid/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "README.md",
+            "model_id": null,
+            "sha256": "9b24eeaec536151862ecdb12efc3bc90dd91d07159a39fffca95ffbeeb2c241d",
+            "cache_path": null,
+            "file_path": [
+                "ella/README.md"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ella-sd1.5-tsc-t5xl.safetensors",
+            "model_id": null,
+            "sha256": "ca2018e325170d622389b531c0a061eea9d856b80e58e359ed54ade881517417",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/ella-sd1.5-tsc-t5xl.safetensors",
+            "file_path": [
+                "ella/ella-sd1.5-tsc-t5xl.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model.safetensors",
+            "model_id": null,
+            "sha256": "5a043d09bab6b1e17bc9b57e4636c5a54880679b87f04ed908cc73c601653cf1",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella_encoder/models--google--flan-t5-xl--text_encoder/model.safetensors",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/model.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer.json",
+            "model_id": null,
+            "sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/models--google--flan-t5-xl--text_encoder/tokenizer.json",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/tokenizer.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "special_tokens_map.json",
+            "model_id": null,
+            "sha256": "5c87151ef0f72a99d1f766a4c418bd2a1f90aaa30a8e22fe5eca9641daebb64f",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/models--google--flan-t5-xl--text_encoder/special_tokens_map.json",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/special_tokens_map.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "spiece.model",
+            "model_id": null,
+            "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/models--google--flan-t5-xl--text_encoder/spiece.model",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/spiece.model"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "07b440d696ed32d756a28c89d3b43350dcf8c2f2e99c0b544b1dc67768089367",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/models--google--flan-t5-xl--text_encoder/config.json",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer_config.json",
+            "model_id": null,
+            "sha256": "ef30e0628a2d067c5d9d02d98cbf9a2040f4a51883e5d16e1809eea548db0eff",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/ella/models--google--flan-t5-xl--text_encoder/tokenizer_config.json",
+            "file_path": [
+                "ella/models--google--flan-t5-xl--text_encoder/tokenizer_config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11f1p_sd15_depth_fp16.safetensors",
+            "model_id": null,
+            "sha256": "1c4a79aa52fb63f607cb9ff479ea5aa1923b6ceb21267bd14b69bd05d7b617be",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sd1.5/control_v11f1p_sd15_depth_fp16.safetensors",
+            "file_path": [
+                "controlnet/control_v11f1p_sd15_depth_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control-lora-canny-rank256.safetensors",
+            "model_id": null,
+            "sha256": "21f79f7368eff07f57bcd507ca91c0fc89070d7da182960ff24ed1d58310c3a7",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/control-lora/control-lora-canny-rank256.safetensors",
+            "file_path": [
+                "controlnet/control-lora-canny-rank256.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "body_pose_model.pth",
+            "model_id": null,
+            "sha256": "25a948c16078b0f08e236bda51a385d855ef4c153598947c28c0d47ed94bb746",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/IDM-VTON/openpose/ckpts/body_pose_model.pth",
+            "file_path": [
+                "controlnet/body_pose_model.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ioclab_sd15_recolor.safetensors",
+            "model_id": null,
+            "sha256": "a3fc5d9f6601d0636b5f45f07f31ec3b81a13e195c55ef0b89985d84ffa77a64",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/ioclab_sd15_recolor.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11p_sd15_lineart_fp16.safetensors",
+            "model_id": null,
+            "sha256": "10559106d1bb8196298b7a81565ede9279295d2b2df15165b9dbe189994def56",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sd1.5/control_v11p_sd15_lineart_fp16.safetensors",
+            "file_path": [
+                "controlnet/control_v11p_sd15_lineart_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors",
+            "model_id": null,
+            "sha256": "3d7db14f6b82c981f506be138774f6d9324dd2087a193e79682b4856ec90a622",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sdxl/tile/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors",
+            "file_path": [
+                "controlnet/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11f1e_sd15_tile_fp16.safetensors",
+            "model_id": null,
+            "sha256": "2f31868eedb243a77932e3c63907a6ba0a2058b6d65b5c27b89ee1b7f618ea33",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sd1.5/control_v11f1e_sd15_tile_fp16.safetensors",
+            "file_path": [
+                "controlnet/control_v11f1e_sd15_tile_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_sd15_inpaint_depth_hand_fp16.safetensors",
+            "model_id": null,
+            "sha256": "944b74b8ed3701117ffe5550026bbff2c8616f1c92b1bb2fee00e5349ff46256",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sd1.5/control_sd15_inpaint_depth_hand_fp16.safetensors",
+            "file_path": [
+                "controlnet/control_sd15_inpaint_depth_hand_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11p_sd15_canny_fp16.safetensors",
+            "model_id": null,
+            "sha256": "8932b66e15aae835b3490dbf989f56c253104cee08a88bf21283762f557c9f10",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sd1.5/control_v11p_sd15_canny_fp16.safetensors",
+            "file_path": [
+                "controlnet/control_v11p_sd15_canny_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v1p_sd15_brightness.safetensors",
+            "model_id": null,
+            "sha256": "9161c3825216e6baa45806fe9763df13ee7c60f0e12e693b7d4a00f039b1ba86",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/control_v1p_sd15_brightness.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "\u4e5d\u54f2\u63a7\u5236sdxl-1.0.safetensors",
+            "model_id": null,
+            "sha256": "9fae2e50cb431bfcbe05822b59ec2228df545ef27f711dea8949e9f4ed9f7cdc",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sdxl/xinsir/controlnet-union-sdxl-1.0/diffusion_pytorch_model_promax.safetensors",
+            "file_path": [
+                "controlnet/\u4e5d\u54f2\u63a7\u5236sdxl-1.0.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v1p_sd15_qrcode_monster.safetensors",
+            "model_id": null,
+            "sha256": "c7f43f70e266153d12f5e1bb1c9e7be3f4513cf0eef0432661b1331bfe11cadf",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/control_v1p_sd15_qrcode_monster.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_sd15_hed.pth",
+            "model_id": null,
+            "sha256": "00ad5ff2c3ce279332650d79f24a912ef8aa411382fcbde2a20e6239cce65d9c",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/control_sd15_hed.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11f1p_sd15_depth.pth",
+            "model_id": null,
+            "sha256": "761077ffe369fe8cf16ae353f8226bd4ca29805b161052f82c0170c7b50f1d99",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/1.5/control_v11f1p_sd15_depth.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "control_v11p_sd15_openpose.pth",
+            "model_id": null,
+            "sha256": "db97becd92cd19aff71352a60e93c2508decba3dee64f01f686727b9b406a9dd",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/1.5/control_v11p_sd15_openpose.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "diffusion_pytorch_model.safetensors",
+            "model_id": null,
+            "sha256": "c8127be9f174101ebdafee9964d856b49b634435cf6daa396d3f593cf0bbbb05",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/instantid/diffusion_pytorch_model.safetensors",
+            "file_path": [
+                "controlnet/instantid/diffusion_pytorch_model.safetensors",
+                "controlnet/lnstantiD/control_instant_id_sdxl.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sai_xl_depth_256lora.safetensors",
+            "model_id": null,
+            "sha256": "838494a80a1d437e0d2d938baf457f1586c916a4724c87614508e0739b1770aa",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/XL/sai_xl_depth_256lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sai_xl_canny_256lora.safetensors",
+            "model_id": null,
+            "sha256": "c9269721b1f7043625e75b7de2f65a6116b2ad99895965494616f3f2c8548f54",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/XL/sai_xl_canny_256lora.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "CN-anytest_v4-marged.safetensors",
+            "model_id": null,
+            "sha256": "807aa29189c10660dff77a5bbfcf5cf39d60f7780199db36db36a9096e11ace7",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/controlnet/sdxl/CN-anytest_v4-marged.safetensors",
+            "file_path": [
+                "controlnet/anytest/CN-anytest_v4-marged.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "CN-anytest_v3-45000_fp16.safetensors",
+            "model_id": null,
+            "sha256": "9f01f78bf18afad53e6580e4c94edb0eb6af4d8fecb859bb9b6fa543394b23ea",
+            "cache_path": null,
+            "file_path": [
+                "controlnet/anytest/CN-anytest_v3-45000_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "ip-adapter_pulid_sdxl_fp16.safetensors",
+            "model_id": null,
+            "sha256": "b258a5cd2c0c7d35f4d3e59909d7648498686afae4d0c74917e9c47d7704fbf5",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/pulid/ip-adapter_pulid_sdxl_fp16.safetensors",
+            "file_path": [
+                "pulid/ip-adapter_pulid_sdxl_fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "4xESRGAN.pth",
+            "model_id": null,
+            "sha256": "545805ce2d861ee90972b5fa50b851f19ee4bb35dedd2eb090be1f7c935b6b00",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/4xESRGAN.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "4x_NMKD-Siax_200k.pth",
+            "model_id": null,
+            "sha256": "560424d9f68625713fc47e9e7289a98aabe1d744e1cd6a9ae5a35e9957fd127e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/upscale_models/4x_NMKD-Siax_200k.pth",
+            "file_path": [
+                "upscale_models/4x_NMKD-Siax_200k.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "lollypop.pth",
+            "model_id": null,
+            "sha256": "4e609039d8ece82dd6aba14b692181c6722a461a762eef538700683dfef6fb6e",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/lollypop.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "4x_NMKD-Superscale-SP_178000_G.pth",
+            "model_id": null,
+            "sha256": "1d1b0078fe71446e0469d8d4df59e96baa80d83cda600d68237d655830821bcc",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/4x_NMKD-Superscale-SP_178000_G.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "4x-UltraSharp.pth",
+            "model_id": null,
+            "sha256": "a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/upscale_models/4x-UltraSharp.pth",
+            "file_path": [
+                "upscale_models/4x-UltraSharp.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "OmniSR_X3_DIV2K.safetensors",
+            "model_id": null,
+            "sha256": "4fb0b68fc314f798d2ddcf1f3d2253045ba3d959d8b9ae270c5a99b9f862ee12",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/OmniSR_X3_DIV2K.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "8x_NMKD-Faces_160000_G.pth",
+            "model_id": null,
+            "sha256": "0c858e3f3144d108902b12d76d3121283a3be879982eb952ef47519c5f444ab7",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/upscale_models/8x_NMKD-Faces_160000_G.pth",
+            "file_path": [
+                "upscale_models/8x_NMKD-Faces_160000_G.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "OmniSR_X2_DIV2K.safetensors",
+            "model_id": null,
+            "sha256": "79408fc23203bf161faa957c4a602cc40521ed2235a72d976bd9d375e6644611",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/OmniSR_X2_DIV2K.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "OmniSR_X4_DIV2K.safetensors",
+            "model_id": null,
+            "sha256": "dff25e4ed392cb5cbe534d920e292063a0555df9281c54c5ec321490a2a59832",
+            "cache_path": null,
+            "file_path": [
+                "upscale_models/OmniSR_X4_DIV2K.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "8x_NMKD-Superscale_150000_G.pth",
+            "model_id": null,
+            "sha256": "1fb44a906b9bc4dd89d6bf8d1d28e6cc59cc58c2a28251aa88c85a38e72c8507",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/upscale_models/8x_NMKD-Superscale_150000_G.pth",
+            "file_path": [
+                "upscale_models/8x_NMKD-Superscale_150000_G.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "scaleu.ckpt",
+            "model_id": null,
+            "sha256": "a15bb2d7701927fa821566882caecfbfe072814f506b42271ba1421cad20250d",
+            "cache_path": null,
+            "file_path": [
+                "instance_models/scaleu_models/scaleu.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "fusers.ckpt",
+            "model_id": null,
+            "sha256": "f1fae6b76a83518e246a217199a59bc2cf433e09045eb8348c46e6d7aa2c2b24",
+            "cache_path": null,
+            "file_path": [
+                "instance_models/fuser_models/fusers.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "position_net.ckpt",
+            "model_id": null,
+            "sha256": "ff70598acb49ccc7fcc01f399bb404341ce774bb341f2545fc9480c6693b372e",
+            "cache_path": null,
+            "file_path": [
+                "instance_models/positionnet_models/position_net.ckpt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "BiRefNet-ep480.pth",
+            "model_id": null,
+            "sha256": "367a738b27e0556e703991e8160fe6b5217bec6c158a72a890d131dd11ba74f6",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/BiRefNet/BiRefNet-ep480.pth",
+            "file_path": [
+                "BiRefNet/BiRefNet-ep480.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "swin_large_patch4_window12_384_22kto1k.pth",
+            "model_id": null,
+            "sha256": "30762928cd6ee9229e24e26e200951b8fe635799b67db016ba747fa653b64db9",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/BiRefNet/swin_large_patch4_window12_384_22kto1k.pth",
+            "file_path": [
+                "BiRefNet/swin_large_patch4_window12_384_22kto1k.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model.bin",
+            "model_id": null,
+            "sha256": "b272ae62588c1cb87fb5c25c35ec8bb6a7d03591cd42499bbf2f9e8d795ce748",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/prompt_generator/text2image-prompt-generator/.git/lfs/objects/b2/72/b272ae62588c1cb87fb5c25c35ec8bb6a7d03591cd42499bbf2f9e8d795ce748",
+            "file_path": [
+                "prompt_generator/text2image-prompt-generator/pytorch_model.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model.bin",
+            "model_id": null,
+            "sha256": "9d8ceb91d103ef89400c9d9d62328b4858743cf8924878aee3b8afc594242ce0",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/prompt_generator/opus-mt-zh-en/pytorch_model.bin",
+            "file_path": [
+                "prompt_generator/opus-mt-zh-en/pytorch_model.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "sdxl_lightning_4step_unet.safetensors",
+            "model_id": null,
+            "sha256": "b820f47a3a155a554505d1aaf7447f99c3051e16232857ca9f3f8d778b0f553c",
+            "cache_path": null,
+            "file_path": [
+                "unet/sdxl_lightning_4step_unet.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "OMS_1024_VTHD+DressCode_200000.safetensors",
+            "model_id": null,
+            "sha256": "233c40e16370bfe433c983de53b286ada0e4ddb108df5407db3d71fa3a8773a3",
+            "cache_path": null,
+            "file_path": [
+                "unet/OMS_1024_VTHD+DressCode_200000.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "flux1-dev-fp8.safetensors",
+            "model_id": null,
+            "sha256": "1be961341be8f5307ef26c787199f80bf4e0de3c1c0b4617095aa6ee5550dfce",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/sdd/flux1-dev-fp8.safetensors",
+            "file_path": [
+                "unet/Flux/flux1-dev-fp8.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "inswapper_128.onnx",
+            "model_id": null,
+            "sha256": "e4a3f08c753cb72d04e10aa0f7dbe3deebbf39567d4ead6dce08e98aa49e16af",
+            "cache_path": "/mnt/chenyu-nvme/0/e4a3f08c753cb72d04e10aa0f7dbe3deebbf39567d4ead6dce08e98aa49e16af",
+            "file_path": [
+                "insightface/inswapper_128.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "1k3d68.onnx",
+            "model_id": null,
+            "sha256": "df5c06b8a0c12e422b2ed8947b8869faa4105387f199c477af038aa01f9a45cc",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/antelopev2/antelopev2/1k3d68.onnx",
+            "file_path": [
+                "insightface/models/buffalo_l/1k3d68.onnx",
+                "insightface/models/antelopev2/1k3d68.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "det_10g.onnx",
+            "model_id": null,
+            "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/antelopev2/antelopev2/scrfd_10g_bnkps.onnx",
+            "file_path": [
+                "insightface/models/buffalo_l/det_10g.onnx",
+                "insightface/models/antelopev2/scrfd_10g_bnkps.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "2d106det.onnx",
+            "model_id": null,
+            "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/antelopev2/antelopev2/2d106det.onnx",
+            "file_path": [
+                "insightface/models/buffalo_l/2d106det.onnx",
+                "insightface/models/antelopev2/2d106det.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "genderage.onnx",
+            "model_id": null,
+            "sha256": "4fde69b1c810857b88c64a335084f1c3fe8f01246c9a191b48c7bb756d6652fb",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/antelopev2/antelopev2/genderage.onnx",
+            "file_path": [
+                "insightface/models/buffalo_l/genderage.onnx",
+                "insightface/models/antelopev2/genderage.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "w600k_r50.onnx",
+            "model_id": null,
+            "sha256": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/buffalo_l/w600k_r50.onnx",
+            "file_path": [
+                "insightface/models/buffalo_l/w600k_r50.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "glintr100.onnx",
+            "model_id": null,
+            "sha256": "4ab1d6435d639628a6f3e5008dd4f929edf4c4124b1a7169e1048f9fef534cdf",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/insightface/models/antelopev2/antelopev2/glintr100.onnx",
+            "file_path": [
+                "insightface/models/antelopev2/glintr100.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "photomaker-v1.bin",
+            "model_id": null,
+            "sha256": "529d503fa378bfb3a74e3384ab2064d7269d59f0638324555d22067c31e275bc",
+            "cache_path": null,
+            "file_path": [
+                "photomaker/photomaker-v1.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "photomaker-v1.bin.metadata",
+            "model_id": null,
+            "sha256": "0fe9474f2ad3cddf60e0b80e120d30950dae62aed2ece2977da46cc42a4f6949",
+            "cache_path": null,
+            "file_path": [
+                "photomaker/.huggingface/download/photomaker-v1.bin.metadata"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesdxl_encoder.pth",
+            "model_id": null,
+            "sha256": "a5648de089aba6b641e505c0f132b2dc7ff70ab6070c31be5e624e807e711c5e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesdxl_encoder.pth",
+            "file_path": [
+                "vae_approx/taesdxl_encoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesd_encoder.pth",
+            "model_id": null,
+            "sha256": "15bc6128f0ac51c673d3427216082ebfa62402ffc89763af74edfe259b32d49d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesd_encoder.pth",
+            "file_path": [
+                "vae_approx/taesd_encoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesd3_decoder.pth",
+            "model_id": null,
+            "sha256": "178fbb90c8c3bab4fe5e30dcba3b85d8bd2c9a203f71239c3a3223720c310b58",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesd3_decoder.pth",
+            "file_path": [
+                "vae_approx/taesd3_decoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesd3_encoder.pth",
+            "model_id": null,
+            "sha256": "b8fefa64b92a867df673c7f22fb2cbc6ae144070e22e7a0b3af0f21de2f43f92",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesd3_encoder.pth",
+            "file_path": [
+                "vae_approx/taesd3_encoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesd_decoder.pth",
+            "model_id": null,
+            "sha256": "4ded74b856789e00948e8b8e920de92b1405756d2ee6f24842a90ffd9281cf68",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesd_decoder.pth",
+            "file_path": [
+                "vae_approx/taesd_decoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "taesdxl_decoder.pth",
+            "model_id": null,
+            "sha256": "05e39f4165fb13d2fb55832e5e20b1754cd0f4829d6e7cc191e87cfe61f052ab",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/vae_approx/taesdxl_decoder.pth",
+            "file_path": [
+                "vae_approx/taesdxl_decoder.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "RMBG-1.4.pth",
+            "model_id": null,
+            "sha256": "893c16c340b1ddafc93e78457a4d94190da9b7179149f8574284c83caebf5e8c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/RMBG-1.4/model.pth",
+            "file_path": [
+                "rembg/RMBG-1.4.pth"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "u2net_human_seg.onnx",
+            "model_id": null,
+            "sha256": "01eb6a29a5c4d8edb30b56adad9bb3a2a0535338e480724a213e0acfd2d1c73c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/rembg/u2net_human_seg.onnx",
+            "file_path": [
+                "rembg/u2net_human_seg.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "u2net.onnx",
+            "model_id": null,
+            "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/rembg/u2net.onnx",
+            "file_path": [
+                "rembg/u2net.onnx"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "model_index.json",
+            "model_id": null,
+            "sha256": "1f7b15106bb6afe6e0520a4cfac5d51f300358c77714a52cd547bb3d4b5f4472",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/model_index.json",
+            "file_path": [
+                "diffusers/Kolors/model_index.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "d93cbcbbba0bb2709185685aff3e4a53c76a4405eb4380ce863f2af1625d0b22",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/unet/config.json",
+            "file_path": [
+                "diffusers/Kolors/unet/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "diffusion_pytorch_model.fp16.safetensors",
+            "model_id": null,
+            "sha256": "425ff1dcbe3a70ac13d3afdd69bd4e3176b0c3260722527c80b210f11d2d966c",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/unet/Kolors/diffusion_pytorch_model.fp16.safetensors",
+            "file_path": [
+                "diffusers/Kolors/unet/diffusion_pytorch_model.fp16.safetensors"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "scheduler_config.json",
+            "model_id": null,
+            "sha256": "78406f53776f64dbc77a243c931390d312672c74743ed2d57b438fdba4a28847",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/scheduler/scheduler_config.json",
+            "file_path": [
+                "diffusers/Kolors/scheduler/scheduler_config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00003-of-00007.bin",
+            "model_id": null,
+            "sha256": "2400101255213250d9df716f778b7d2325f2fa4a8acaedee788338fceee5b27e",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00003-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00003-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00002-of-00007.bin",
+            "model_id": null,
+            "sha256": "2f96bef324acb5c3fe06b7a80f84272fe064d0327cbf14eddfae7af0d665a6ac",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00002-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00002-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00001-of-00007.bin",
+            "model_id": null,
+            "sha256": "b6a6388dae55b598efe76c704e7f017bd84e6f6213466b7686a8f8326f78ab05",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00001-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00001-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00004-of-00007.bin",
+            "model_id": null,
+            "sha256": "472567c1b0e448a19171fbb5b3dab5670426d0a5dfdfd2c3a87a60bb1f96037d",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00004-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00004-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00005-of-00007.bin",
+            "model_id": null,
+            "sha256": "ef2aea78fa386168958e5ba42ecf09cbb567ed3e77ce2be990d556b84081e2b9",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00005-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00005-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00007-of-00007.bin",
+            "model_id": null,
+            "sha256": "b7cdaa9b8ed183284905c49d19bf42360037fdf2f95acb3093039d3c3a459261",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00007-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00007-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model-00006-of-00007.bin",
+            "model_id": null,
+            "sha256": "35191adf21a1ab632c2b175fcbb6c27601150026cb1ed5d602938d825954526f",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model-00006-of-00007.bin",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model-00006-of-00007.bin"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer.model",
+            "model_id": null,
+            "sha256": "e7dc4c393423b76e4373e5157ddc34803a0189ba96b21ddbb40269d31468a6f2",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/vocab.txt",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/tokenizer.model",
+                "diffusers/Kolors/text_encoder/vocab.txt"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "tokenizer_config.json",
+            "model_id": null,
+            "sha256": "2847370c8514db7f455db94f52439a701334dd68710820364e60da0482c85c36",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/tokenizer_config.json",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/tokenizer_config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "config.json",
+            "model_id": null,
+            "sha256": "82019081f545c8a1ab528ab5da698628ccd71b1b51edce41f5e3620ccb98cf02",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/config.json",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/config.json"
+            ],
+            "download_url": null
+        },
+        {
+            "model_name": "pytorch_model.bin.index.json",
+            "model_id": null,
+            "sha256": "cd61a351c1f7432a0e9a2865633d6690765c9a2087af71babfaa29881b2a13aa",
+            "cache_path": "/mnt/chenyu-nvme/ComfyUI/models/diffusers/Kolors/text_encoder/pytorch_model.bin.index.json",
+            "file_path": [
+                "diffusers/Kolors/text_encoder/pytorch_model.bin.index.json"
+            ],
+            "download_url": null
+        }
+    ],
+    "plugins": [
+        {
+            "name": "ComfyUI_FaceAnalysis",
+            "remote_url": "https://github.com/cubiq/ComfyUI_FaceAnalysis",
+            "commit_log": "3a4df6f"
+        },
+        {
+            "name": "ComfyUI_experiments",
+            "remote_url": "https://github.com/comfyanonymous/ComfyUI_experiments",
+            "commit_log": "934dba9"
+        },
+        {
+            "name": "ComfyUI_ADV_CLIP_emb",
+            "remote_url": "https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb",
+            "commit_log": "63984de"
+        },
+        {
+            "name": "ComfyUI-Inpaint-CropAndStitch",
+            "remote_url": "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch",
+            "commit_log": "a4574cb"
+        },
+        {
+            "name": "ComfyUI-TrackingNodes",
+            "remote_url": "https://github.com/logtd/ComfyUI-TrackingNodes",
+            "commit_log": "6bac3f5"
+        },
+        {
+            "name": "comfyui-dream-project",
+            "remote_url": "https://github.com/alt-key-project/comfyui-dream-project",
+            "commit_log": "b2ddca8"
+        },
+        {
+            "name": "ComfyUI-Marigold",
+            "remote_url": "https://github.com/kijai/ComfyUI-Marigold",
+            "commit_log": "4f1a101"
+        },
+        {
+            "name": "ComfyUI-Gaffer",
+            "remote_url": "https://github.com/huagetai/ComfyUI-Gaffer",
+            "commit_log": "e2301a5"
+        },
+        {
+            "name": "ComfyMath",
+            "remote_url": "https://github.com/evanspearman/ComfyMath",
+            "commit_log": "be9beab"
+        },
+        {
+            "name": "Lora-Training-in-Comfy",
+            "remote_url": "https://github.com/LarryJane491/Lora-Training-in-Comfy",
+            "commit_log": "b4063dc"
+        },
+        {
+            "name": "sdxl_prompt_styler",
+            "remote_url": "https://github.com/twri/sdxl_prompt_styler",
+            "commit_log": "5106817"
+        },
+        {
+            "name": "SeargeSDXL",
+            "remote_url": "https://github.com/SeargeDP/SeargeSDXL",
+            "commit_log": "2eb5edb"
+        },
+        {
+            "name": "ComfyUI_IPAdapter_plus",
+            "remote_url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+            "commit_log": "8208e27"
+        },
+        {
+            "name": "comfyui_segment_anything",
+            "remote_url": "https://github.com/storyicon/comfyui_segment_anything",
+            "commit_log": "ab63955"
+        },
+        {
+            "name": "comfyui-various",
+            "remote_url": "https://github.com/jamesWalker55/comfyui-various",
+            "commit_log": "ec58185"
+        },
+        {
+            "name": "ComfyUI_tinyterraNodes",
+            "remote_url": "https://github.com/TinyTerra/ComfyUI_tinyterraNodes",
+            "commit_log": "7a6c476"
+        },
+        {
+            "name": "ComfyUI-Inspire-Pack",
+            "remote_url": "https://github.com/ltdrdata/ComfyUI-Inspire-Pack",
+            "commit_log": "d84435e"
+        },
+        {
+            "name": "AIGODLIKE-COMFYUI-TRANSLATION",
+            "remote_url": "https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION",
+            "commit_log": "c594f46"
+        },
+        {
+            "name": "ComfyUI-BRIA_AI-RMBG",
+            "remote_url": "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG.git",
+            "commit_log": "827fcd6"
+        },
+        {
+            "name": "ComfyUI-N-Sidebar",
+            "remote_url": "https://github.com/Nuked88/ComfyUI-N-Sidebar",
+            "commit_log": "7ae7da4"
+        },
+        {
+            "name": "sd-dynamic-thresholding",
+            "remote_url": "https://github.com/mcmonkeyprojects/sd-dynamic-thresholding",
+            "commit_log": "8a84fec"
+        },
+        {
+            "name": "ComfyUI-Impact-Pack",
+            "remote_url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+            "commit_log": "ab17f88"
+        },
+        {
+            "name": "comfy-image-saver",
+            "remote_url": "https://github.com/giriss/comfy-image-saver",
+            "commit_log": "65e6903"
+        },
+        {
+            "name": "ComfyUI_InstantID",
+            "remote_url": "https://github.com/cubiq/ComfyUI_InstantID",
+            "commit_log": "d8c70a0"
+        },
+        {
+            "name": "ComfyUI_LayerStyle",
+            "remote_url": "https://github.com/chflame163/ComfyUI_LayerStyle",
+            "commit_log": "d5599af"
+        },
+        {
+            "name": "comfyui-art-venture",
+            "remote_url": "https://github.com/sipherxyz/comfyui-art-venture",
+            "commit_log": "2b15c77"
+        },
+        {
+            "name": "ComfyUI-Custom-Scripts",
+            "remote_url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+            "commit_log": "edc5321"
+        },
+        {
+            "name": "PuLID_ComfyUI",
+            "remote_url": "https://github.com/cubiq/PuLID_ComfyUI",
+            "commit_log": "145a5ef"
+        },
+        {
+            "name": "was-node-suite-comfyui",
+            "remote_url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+            "commit_log": "3911e57"
+        },
+        {
+            "name": "comfyui-mixlab-nodes",
+            "remote_url": "https://github.com/shadowcz007/comfyui-mixlab-nodes",
+            "commit_log": "216c7e1"
+        },
+        {
+            "name": "ComfyUI_UltimateSDUpscale",
+            "remote_url": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+            "commit_log": "233f8b8"
+        },
+        {
+            "name": "ComfyUI_Bxb",
+            "remote_url": "https://github.com/zhulu111/ComfyUI_Bxb",
+            "commit_log": "1721626"
+        },
+        {
+            "name": "facerestore_cf",
+            "remote_url": "https://github.com/mav-rik/facerestore_cf",
+            "commit_log": "67f90bc"
+        },
+        {
+            "name": "ComfyUI-Logic",
+            "remote_url": "https://github.com/theUpsider/ComfyUI-Logic",
+            "commit_log": "fb88973"
+        },
+        {
+            "name": "ComfyUI_Custom_Nodes_AlekPet",
+            "remote_url": "https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet",
+            "commit_log": "f0d8d3d"
+        },
+        {
+            "name": "ComfyUI_JPS-Nodes",
+            "remote_url": "https://github.com/JPS-GER/ComfyUI_JPS-Nodes",
+            "commit_log": "0e2a9ac"
+        },
+        {
+            "name": "OneButtonPrompt",
+            "remote_url": "https://github.com/AIrjen/OneButtonPrompt",
+            "commit_log": "421853e"
+        },
+        {
+            "name": "comfyui-mask-util",
+            "remote_url": "https://github.com/longgui0318/comfyui-mask-util",
+            "commit_log": "2970a67"
+        },
+        {
+            "name": "comfyui_controlnet_aux",
+            "remote_url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+            "commit_log": "3c1d9de"
+        },
+        {
+            "name": "ComfyUI-Easy-Use",
+            "remote_url": "https://github.com/yolain/ComfyUI-Easy-Use",
+            "commit_log": "9e85e3a"
+        },
+        {
+            "name": "comfyui-inpaint-nodes",
+            "remote_url": "https://github.com/Acly/comfyui-inpaint-nodes",
+            "commit_log": "717cb77"
+        },
+        {
+            "name": "ComfyUI_FizzNodes",
+            "remote_url": "https://github.com/FizzleDorf/ComfyUI_FizzNodes",
+            "commit_log": "3db5b71"
+        },
+        {
+            "name": "ComfyUI-InstanceDiffusion",
+            "remote_url": "https://github.com/logtd/ComfyUI-InstanceDiffusion",
+            "commit_log": "093ba38"
+        },
+        {
+            "name": "ComfyUI-AnimateDiff-Evolved",
+            "remote_url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved",
+            "commit_log": "7c75983"
+        },
+        {
+            "name": "eden_comfy_pipelines",
+            "remote_url": "https://github.com/edenartlab/eden_comfy_pipelines",
+            "commit_log": "c13b17d"
+        },
+        {
+            "name": "ComfyUI-layerdiffuse",
+            "remote_url": "https://github.com/huchenlei/ComfyUI-layerdiffuse",
+            "commit_log": "ef55b8f"
+        },
+        {
+            "name": "comfyui-workspace-manager",
+            "remote_url": "https://github.com/11cafe/comfyui-workspace-manager",
+            "commit_log": "621afb1"
+        },
+        {
+            "name": "ComfyUI-SuperBeasts",
+            "remote_url": "https://github.com/SuperBeastsAI/ComfyUI-SuperBeasts",
+            "commit_log": "449496e"
+        },
+        {
+            "name": "ComfyUI-BiRefNet",
+            "remote_url": "https://github.com/viperyl/ComfyUI-BiRefNet",
+            "commit_log": "2513956"
+        },
+        {
+            "name": "ComfyUI-Video-Matting",
+            "remote_url": "https://github.com/Fannovel16/ComfyUI-Video-Matting",
+            "commit_log": "dd5ff37"
+        },
+        {
+            "name": "ComfyLiterals",
+            "remote_url": "https://github.com/M1kep/ComfyLiterals",
+            "commit_log": "bdddb08"
+        },
+        {
+            "name": "ComfyUI-SD3LatentSelectRes",
+            "remote_url": "https://github.com/GavChap/ComfyUI-SD3LatentSelectRes",
+            "commit_log": "500637f"
+        },
+        {
+            "name": "ComfyUI_StoryDiffusion",
+            "remote_url": "https://github.com/smthemex/ComfyUI_StoryDiffusion",
+            "commit_log": "4c29810"
+        },
+        {
+            "name": "ComfyUI-Crystools",
+            "remote_url": "https://github.com/crystian/ComfyUI-Crystools",
+            "commit_log": "bfbfd12"
+        },
+        {
+            "name": "comfyui-portrait-master-zh-cn",
+            "remote_url": "https://github.com/ZHO-ZHO-ZHO/comfyui-portrait-master-zh-cn",
+            "commit_log": "327916a"
+        },
+        {
+            "name": "ComfyUi_NNLatentUpscale",
+            "remote_url": "https://github.com/Ttl/ComfyUi_NNLatentUpscale",
+            "commit_log": "08105da"
+        },
+        {
+            "name": "ComfyUI-IC-Light",
+            "remote_url": "https://mirror.ghproxy.com/https://github.com/kijai/ComfyUI-IC-Light.git",
+            "commit_log": "476303a"
+        },
+        {
+            "name": "ComfyUI-VideoHelperSuite",
+            "remote_url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+            "commit_log": "29fae75"
+        },
+        {
+            "name": "comfyui-reactor-node",
+            "remote_url": "https://github.com/Gourieff/comfyui-reactor-node",
+            "commit_log": "983498b"
+        },
+        {
+            "name": "steerable-motion",
+            "remote_url": "https://github.com/banodoco/steerable-motion",
+            "commit_log": "b95e9ee"
+        },
+        {
+            "name": "LoadLoraWithTags",
+            "remote_url": "https://github.com/Extraltodeus/LoadLoraWithTags",
+            "commit_log": "764b0e8"
+        },
+        {
+            "name": "stability-ComfyUI-nodes",
+            "remote_url": "https://github.com/Stability-AI/stability-ComfyUI-nodes",
+            "commit_log": "0011546"
+        },
+        {
+            "name": "ComfyUI-Eagle-PNGInfo",
+            "remote_url": "https://github.com/hylarucoder/ComfyUI-Eagle-PNGInfo",
+            "commit_log": "03e82a0"
+        },
+        {
+            "name": "ComfyUI-BrushNet",
+            "remote_url": "https://github.com/nullquant/ComfyUI-BrushNet",
+            "commit_log": "a510eff"
+        },
+        {
+            "name": "ComfyUI-SUPIR",
+            "remote_url": "https://github.com/kijai/ComfyUI-SUPIR",
+            "commit_log": "bbb2bd7"
+        },
+        {
+            "name": "ComfyUI-Manager",
+            "remote_url": "https://github.com/ltdrdata/ComfyUI-Manager.git",
+            "commit_log": "db2f5ef"
+        },
+        {
+            "name": "cg-use-everywhere",
+            "remote_url": "https://github.com/chrisgoringe/cg-use-everywhere",
+            "commit_log": "eb4fada"
+        },
+        {
+            "name": "ComfyUI-DynamiCrafterWrapper",
+            "remote_url": "https://github.com/kijai/ComfyUI-DynamiCrafterWrapper",
+            "commit_log": "19e0c9e"
+        },
+        {
+            "name": "rgthree-comfy",
+            "remote_url": "https://github.com/rgthree/rgthree-comfy",
+            "commit_log": "bb0232e"
+        },
+        {
+            "name": "ComfyUI_Comfyroll_CustomNodes",
+            "remote_url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+            "commit_log": "d78b780"
+        },
+        {
+            "name": "cg-image-picker",
+            "remote_url": "https://github.com/chrisgoringe/cg-image-picker",
+            "commit_log": "6242c01"
+        },
+        {
+            "name": "ComfyUI-KJNodes",
+            "remote_url": "https://github.com/kijai/ComfyUI-KJNodes",
+            "commit_log": "ffafc9c"
+        },
+        {
+            "name": "ComfyUI-Gemini",
+            "remote_url": "https://github.com/ZHO-ZHO-ZHO/ComfyUI-Gemini",
+            "commit_log": "98d91fc"
+        },
+        {
+            "name": "ComfyUI-Image-Selector",
+            "remote_url": "https://github.com/SLAPaper/ComfyUI-Image-Selector",
+            "commit_log": "5db4ab9"
+        },
+        {
+            "name": "ComfyUI-WD14-Tagger",
+            "remote_url": "https://github.com/pythongosssss/ComfyUI-WD14-Tagger",
+            "commit_log": "4f1a857"
+        },
+        {
+            "name": "ComfyUI_TiledKSampler",
+            "remote_url": "https://github.com/BlenderNeko/ComfyUI_TiledKSampler",
+            "commit_log": "2fd9b05"
+        },
+        {
+            "name": "ComfyUI_essentials",
+            "remote_url": "https://github.com/cubiq/ComfyUI_essentials",
+            "commit_log": "8ee40fd"
+        },
+        {
+            "name": "ComfyUI_Noise",
+            "remote_url": "https://github.com/BlenderNeko/ComfyUI_Noise",
+            "commit_log": "0c9ec19"
+        },
+        {
+            "name": "ComfyUI-Inference-Core-Nodes",
+            "remote_url": "https://github.com/LykosAI/ComfyUI-Inference-Core-Nodes",
+            "commit_log": "e94fb0a"
+        },
+        {
+            "name": "ComfyUI-Frame-Interpolation",
+            "remote_url": "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation",
+            "commit_log": "551de2f"
+        },
+        {
+            "name": "mikey_nodes",
+            "remote_url": "https://github.com/bash-j/mikey_nodes",
+            "commit_log": "26fed34"
+        },
+        {
+            "name": "ComfyUI-IC-Light-Native",
+            "remote_url": "https://github.com/huchenlei/ComfyUI-IC-Light-Native",
+            "commit_log": "536739a"
+        },
+        {
+            "name": "__pycache__",
+            "remote_url": "https://github.com/comfyanonymous/ComfyUI",
+            "commit_log": "ae197f6"
+        },
+        {
+            "name": "efficiency-nodes-comfyui",
+            "remote_url": "https://github.com/jags111/efficiency-nodes-comfyui",
+            "commit_log": "a6df20f"
+        },
+        {
+            "name": "comfyui-tooling-nodes",
+            "remote_url": "https://github.com/Acly/comfyui-tooling-nodes",
+            "commit_log": "9d53398"
+        },
+        {
+            "name": "comfy_mtb",
+            "remote_url": "https://github.com/melMass/comfy_mtb",
+            "commit_log": "9007a70"
+        },
+        {
+            "name": "ComfyUI-SD3-Powerlab",
+            "remote_url": "https://github.com/G-370/ComfyUI-SD3-Powerlab",
+            "commit_log": "5f2d15f"
+        },
+        {
+            "name": "comfyui_bmad_nodes",
+            "remote_url": "https://github.com/bmad4ever/comfyui_bmad_nodes",
+            "commit_log": "37bbfd6"
+        },
+        {
+            "name": "comfyui-magic-clothing",
+            "remote_url": "https://github.com/longgui0318/comfyui-magic-clothing",
+            "commit_log": "9d35826"
+        },
+        {
+            "name": "ComfyUI-Advanced-ControlNet",
+            "remote_url": "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet",
+            "commit_log": "74d0c56"
+        },
+        {
+            "name": "ComfyUI-KwaiKolorsWrapper",
+            "remote_url": "https://github.com/kijai/ComfyUI-KwaiKolorsWrapper",
+            "commit_log": "49b963f"
+        },
+        {
+            "name": "masquerade-nodes-comfyui",
+            "remote_url": "https://github.com/BadCafeCode/masquerade-nodes-comfyui",
+            "commit_log": "69a9449"
+        }
+    ],
+    "packages": [
+        {
+            "name": "annotated-types",
+            "version": "0.7.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "annotated-types==0.7.0"
+        },
+        {
+            "name": "anyio",
+            "version": "4.0.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "anyio==4.0.0"
+        },
+        {
+            "name": "argon2-cffi",
+            "version": "23.1.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "argon2-cffi==23.1.0"
+        },
+        {
+            "name": "argon2-cffi-bindings",
+            "version": "21.2.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "argon2-cffi-bindings==21.2.0"
+        },
+        {
+            "name": "arrow",
+            "version": "1.2.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "arrow==1.2.3"
+        },
+        {
+            "name": "asttokens",
+            "version": "2.4.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "asttokens==2.4.0"
+        },
+        {
+            "name": "async-lru",
+            "version": "2.0.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "async-lru==2.0.4"
+        },
+        {
+            "name": "attrs",
+            "version": "23.1.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "attrs==23.1.0"
+        },
+        {
+            "name": "Babel",
+            "version": "2.12.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Babel==2.12.1"
+        },
+        {
+            "name": "backcall",
+            "version": "0.2.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "backcall==0.2.0"
+        },
+        {
+            "name": "beautifulsoup4",
+            "version": "4.12.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "beautifulsoup4==4.12.2"
+        },
+        {
+            "name": "bleach",
+            "version": "6.0.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "bleach==6.0.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "boltons @ file:///croot/boltons_1677628692245/work"
+        },
+        {
+            "name": "brotlipy",
+            "version": "0.7.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "brotlipy==0.7.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "certifi @ file:///croot/certifi_1707229174982/work/certifi"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "cffi @ file:///croot/cffi_1670423208954/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work"
+        },
+        {
+            "name": "click",
+            "version": "8.1.7",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "click==8.1.7"
+        },
+        {
+            "name": "coloredlogs",
+            "version": "15.0.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "coloredlogs==15.0.1"
+        },
+        {
+            "name": "comm",
+            "version": "0.1.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "comm==0.1.4"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "conda @ file:///croot/conda_1689269889729/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "conda-content-trust @ file:///tmp/abs_5952f1c8-355c-4855-ad2e-538535021ba5h26t22e5/croots/recipe/conda-content-trust_1658126371814/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "conda-libmamba-solver @ file:///croot/conda-libmamba-solver_1685032319139/work/src"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "conda-package-handling @ file:///croot/conda-package-handling_1685024767917/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "conda_package_streaming @ file:///croot/conda-package-streaming_1685019673878/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "cryptography @ file:///croot/cryptography_1686613057838/work"
+        },
+        {
+            "name": "debugpy",
+            "version": "1.8.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "debugpy==1.8.0"
+        },
+        {
+            "name": "decorator",
+            "version": "5.1.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "decorator==5.1.1"
+        },
+        {
+            "name": "defusedxml",
+            "version": "0.7.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "defusedxml==0.7.1"
+        },
+        {
+            "name": "Deprecated",
+            "version": "1.2.14",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Deprecated==1.2.14"
+        },
+        {
+            "name": "exceptiongroup",
+            "version": "1.1.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "exceptiongroup==1.1.3"
+        },
+        {
+            "name": "executing",
+            "version": "1.2.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "executing==1.2.0"
+        },
+        {
+            "name": "fastjsonschema",
+            "version": "2.18.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "fastjsonschema==2.18.0"
+        },
+        {
+            "name": "filelock",
+            "version": "3.9.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "filelock==3.9.0"
+        },
+        {
+            "name": "flatbuffers",
+            "version": "24.3.25",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "flatbuffers==24.3.25"
+        },
+        {
+            "name": "fqdn",
+            "version": "1.5.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "fqdn==1.5.1"
+        },
+        {
+            "name": "fsspec",
+            "version": "2024.6.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "fsspec==2024.6.0"
+        },
+        {
+            "name": "gitdb",
+            "version": "4.0.11",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "gitdb==4.0.11"
+        },
+        {
+            "name": "GitPython",
+            "version": "3.1.43",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "GitPython==3.1.43"
+        },
+        {
+            "name": "huggingface-hub",
+            "version": "0.23.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "huggingface-hub==0.23.4"
+        },
+        {
+            "name": "humanfriendly",
+            "version": "10.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "humanfriendly==10.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "idna @ file:///croot/idna_1666125576474/work"
+        },
+        {
+            "name": "ipykernel",
+            "version": "6.25.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "ipykernel==6.25.2"
+        },
+        {
+            "name": "ipython",
+            "version": "8.15.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "ipython==8.15.0"
+        },
+        {
+            "name": "isoduration",
+            "version": "20.11.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "isoduration==20.11.0"
+        },
+        {
+            "name": "jedi",
+            "version": "0.19.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jedi==0.19.0"
+        },
+        {
+            "name": "Jinja2",
+            "version": "3.1.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Jinja2==3.1.2"
+        },
+        {
+            "name": "json5",
+            "version": "0.9.14",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "json5==0.9.14"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work"
+        },
+        {
+            "name": "jsonpointer",
+            "version": "2.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jsonpointer==2.1"
+        },
+        {
+            "name": "jsonschema",
+            "version": "4.19.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jsonschema==4.19.0"
+        },
+        {
+            "name": "jsonschema-specifications",
+            "version": "2023.7.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jsonschema-specifications==2023.7.1"
+        },
+        {
+            "name": "jupyter-events",
+            "version": "0.7.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter-events==0.7.0"
+        },
+        {
+            "name": "jupyter-lsp",
+            "version": "2.2.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter-lsp==2.2.0"
+        },
+        {
+            "name": "jupyter_client",
+            "version": "8.3.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter_client==8.3.1"
+        },
+        {
+            "name": "jupyter_core",
+            "version": "5.3.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter_core==5.3.1"
+        },
+        {
+            "name": "jupyter_server",
+            "version": "2.7.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter_server==2.7.3"
+        },
+        {
+            "name": "jupyter_server_terminals",
+            "version": "0.4.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyter_server_terminals==0.4.4"
+        },
+        {
+            "name": "jupyterlab",
+            "version": "4.0.6",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyterlab==4.0.6"
+        },
+        {
+            "name": "jupyterlab-language-pack-zh-CN",
+            "version": "4.0.post2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyterlab-language-pack-zh-CN==4.0.post2"
+        },
+        {
+            "name": "jupyterlab-pygments",
+            "version": "0.2.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyterlab-pygments==0.2.2"
+        },
+        {
+            "name": "jupyterlab_server",
+            "version": "2.25.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "jupyterlab_server==2.25.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "libmambapy @ file:///croot/mamba-split_1685993156657/work/libmambapy"
+        },
+        {
+            "name": "markdown-it-py",
+            "version": "3.0.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "markdown-it-py==3.0.0"
+        },
+        {
+            "name": "MarkupSafe",
+            "version": "2.1.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "MarkupSafe==2.1.3"
+        },
+        {
+            "name": "matplotlib-inline",
+            "version": "0.1.6",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "matplotlib-inline==0.1.6"
+        },
+        {
+            "name": "matrix-client",
+            "version": "0.4.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "matrix-client==0.4.0"
+        },
+        {
+            "name": "mdurl",
+            "version": "0.1.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "mdurl==0.1.2"
+        },
+        {
+            "name": "mistune",
+            "version": "3.0.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "mistune==3.0.1"
+        },
+        {
+            "name": "mpmath",
+            "version": "1.3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "mpmath==1.3.0"
+        },
+        {
+            "name": "nbclient",
+            "version": "0.8.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "nbclient==0.8.0"
+        },
+        {
+            "name": "nbconvert",
+            "version": "7.8.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "nbconvert==7.8.0"
+        },
+        {
+            "name": "nbformat",
+            "version": "5.9.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "nbformat==5.9.2"
+        },
+        {
+            "name": "nest-asyncio",
+            "version": "1.5.7",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "nest-asyncio==1.5.7"
+        },
+        {
+            "name": "networkx",
+            "version": "3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "networkx==3.0"
+        },
+        {
+            "name": "notebook_shim",
+            "version": "0.2.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "notebook_shim==0.2.3"
+        },
+        {
+            "name": "numpy",
+            "version": "1.24.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "numpy==1.24.1"
+        },
+        {
+            "name": "onnxruntime",
+            "version": "1.17.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "onnxruntime==1.17.1"
+        },
+        {
+            "name": "overrides",
+            "version": "7.4.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "overrides==7.4.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "packaging @ file:///croot/packaging_1678965309396/work"
+        },
+        {
+            "name": "pandocfilters",
+            "version": "1.5.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pandocfilters==1.5.0"
+        },
+        {
+            "name": "parso",
+            "version": "0.8.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "parso==0.8.3"
+        },
+        {
+            "name": "pexpect",
+            "version": "4.8.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pexpect==4.8.0"
+        },
+        {
+            "name": "pickleshare",
+            "version": "0.7.5",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pickleshare==0.7.5"
+        },
+        {
+            "name": "Pillow",
+            "version": "9.3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Pillow==9.3.0"
+        },
+        {
+            "name": "platformdirs",
+            "version": "3.10.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "platformdirs==3.10.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work"
+        },
+        {
+            "name": "prometheus-client",
+            "version": "0.17.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "prometheus-client==0.17.1"
+        },
+        {
+            "name": "prompt-toolkit",
+            "version": "3.0.39",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "prompt-toolkit==3.0.39"
+        },
+        {
+            "name": "protobuf",
+            "version": "5.26.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "protobuf==5.26.1"
+        },
+        {
+            "name": "psutil",
+            "version": "5.9.5",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "psutil==5.9.5"
+        },
+        {
+            "name": "ptyprocess",
+            "version": "0.7.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "ptyprocess==0.7.0"
+        },
+        {
+            "name": "pure-eval",
+            "version": "0.2.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pure-eval==0.2.2"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "pycosat @ file:///croot/pycosat_1666805502580/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work"
+        },
+        {
+            "name": "pydantic",
+            "version": "2.9.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pydantic==2.9.2"
+        },
+        {
+            "name": "pydantic_core",
+            "version": "2.23.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pydantic_core==2.23.4"
+        },
+        {
+            "name": "PyGithub",
+            "version": "2.3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "PyGithub==2.3.0"
+        },
+        {
+            "name": "Pygments",
+            "version": "2.16.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Pygments==2.16.1"
+        },
+        {
+            "name": "PyJWT",
+            "version": "2.8.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "PyJWT==2.8.0"
+        },
+        {
+            "name": "PyNaCl",
+            "version": "1.5.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "PyNaCl==1.5.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "pyOpenSSL @ file:///croot/pyopenssl_1677607685877/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "PySocks @ file:///home/builder/ci_310/pysocks_1640793678128/work"
+        },
+        {
+            "name": "python-dateutil",
+            "version": "2.8.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "python-dateutil==2.8.2"
+        },
+        {
+            "name": "python-json-logger",
+            "version": "2.0.7",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "python-json-logger==2.0.7"
+        },
+        {
+            "name": "PyYAML",
+            "version": "6.0.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "PyYAML==6.0.1"
+        },
+        {
+            "name": "pyzmq",
+            "version": "25.1.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "pyzmq==25.1.1"
+        },
+        {
+            "name": "referencing",
+            "version": "0.30.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "referencing==0.30.2"
+        },
+        {
+            "name": "regex",
+            "version": "2024.5.15",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "regex==2024.5.15"
+        },
+        {
+            "name": "requests",
+            "version": "2.31.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "requests==2.31.0"
+        },
+        {
+            "name": "rfc3339-validator",
+            "version": "0.1.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "rfc3339-validator==0.1.4"
+        },
+        {
+            "name": "rfc3986-validator",
+            "version": "0.1.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "rfc3986-validator==0.1.1"
+        },
+        {
+            "name": "rich",
+            "version": "13.7.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "rich==13.7.1"
+        },
+        {
+            "name": "rpds-py",
+            "version": "0.10.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "rpds-py==0.10.3"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "ruamel.yaml @ file:///croot/ruamel.yaml_1666304550667/work"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work"
+        },
+        {
+            "name": "safetensors",
+            "version": "0.4.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "safetensors==0.4.3"
+        },
+        {
+            "name": "Send2Trash",
+            "version": "1.8.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "Send2Trash==1.8.2"
+        },
+        {
+            "name": "shellingham",
+            "version": "1.5.4",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "shellingham==1.5.4"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "six @ file:///tmp/build/80754af9/six_1644875935023/work"
+        },
+        {
+            "name": "smmap",
+            "version": "5.0.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "smmap==5.0.1"
+        },
+        {
+            "name": "sniffio",
+            "version": "1.3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "sniffio==1.3.0"
+        },
+        {
+            "name": "soupsieve",
+            "version": "2.5",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "soupsieve==2.5"
+        },
+        {
+            "name": "stack-data",
+            "version": "0.6.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "stack-data==0.6.2"
+        },
+        {
+            "name": "sympy",
+            "version": "1.12",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "sympy==1.12"
+        },
+        {
+            "name": "terminado",
+            "version": "0.17.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "terminado==0.17.1"
+        },
+        {
+            "name": "tinycss2",
+            "version": "1.2.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "tinycss2==1.2.1"
+        },
+        {
+            "name": "tokenizers",
+            "version": "0.19.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "tokenizers==0.19.1"
+        },
+        {
+            "name": "tomli",
+            "version": "2.0.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "tomli==2.0.1"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "toolz @ file:///croot/toolz_1667464077321/work"
+        },
+        {
+            "name": "torch",
+            "version": "2.1.0+cu118",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "torch==2.1.0+cu118"
+        },
+        {
+            "name": "torchaudio",
+            "version": "2.1.0+cu118",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "torchaudio==2.1.0+cu118"
+        },
+        {
+            "name": "torchvision",
+            "version": "0.16.0+cu118",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "torchvision==0.16.0+cu118"
+        },
+        {
+            "name": "tornado",
+            "version": "6.3.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "tornado==6.3.3"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "tqdm @ file:///croot/tqdm_1679561862951/work"
+        },
+        {
+            "name": "traitlets",
+            "version": "5.10.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "traitlets==5.10.0"
+        },
+        {
+            "name": "transformers",
+            "version": "4.41.2",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "transformers==4.41.2"
+        },
+        {
+            "name": "triton",
+            "version": "2.1.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "triton==2.1.0"
+        },
+        {
+            "name": "typer",
+            "version": "0.12.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "typer==0.12.3"
+        },
+        {
+            "name": "typing_extensions",
+            "version": "4.7.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "typing_extensions==4.7.1"
+        },
+        {
+            "name": "uri-template",
+            "version": "1.3.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "uri-template==1.3.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "urllib3 @ file:///croot/urllib3_1686163155763/work"
+        },
+        {
+            "name": "wcwidth",
+            "version": "0.2.6",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "wcwidth==0.2.6"
+        },
+        {
+            "name": "webcolors",
+            "version": "1.13",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "webcolors==1.13"
+        },
+        {
+            "name": "webencodings",
+            "version": "0.5.1",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "webencodings==0.5.1"
+        },
+        {
+            "name": "websocket-client",
+            "version": "1.6.3",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "websocket-client==1.6.3"
+        },
+        {
+            "name": "wrapt",
+            "version": "1.16.0",
+            "remote_url": null,
+            "type": "normal",
+            "full_text": "wrapt==1.16.0"
+        },
+        {
+            "name": null,
+            "version": null,
+            "remote_url": null,
+            "type": "unknown",
+            "full_text": "zstandard @ file:///croot/zstandard_1677013143055/work"
+        }
+    ]
+}
