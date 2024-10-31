@@ -68,7 +68,7 @@ def add_models(sha256):
         response.raise_for_status()  # 如果响应状态码不是 200，抛出异常
     except requests.exceptions.RequestException as e:
         logging.error(f"请求失败: {e}")
-        raise e
+        # raise e
 
 def get_git_repo_info(repo_path):
     """获取 Git 仓库的地址、名称和当前 commit log"""
