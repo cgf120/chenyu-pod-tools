@@ -74,7 +74,10 @@ def load_plugins():
         repo_path = os.path.join(pod_config.plugin_dir, repo_dir)
         print( f"【提示】处理插件[{index + 1}/{len(repo_dirs)}]：{repo_path}")
         name, remote_url, commit_log = get_git_repo_info(repo_path)
-        plugin = Plugin(name=name, remote_url=remote_url, commit_log=commit_log)
+        try:
+            plugin = Plugin(name=name, remote_url=remote_url, commit_log=commit_log)
+        except:
+            pass
         pod_config.plugins.append(plugin)
         print(f"【提示】插件信息[{index + 1}/{len(repo_dirs)}]：{plugin}")
 
