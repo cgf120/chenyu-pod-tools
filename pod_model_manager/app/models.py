@@ -17,14 +17,14 @@ chenyudata
 """
 
 class Model(db.Model):
-    name = db.Column(db.String(256), nullable=False) # 模型名称 huggingface: repoid  civiai: sha256  other: modelname
-    model_type = db.Column(db.String(32), nullable=False) # -1: 其他 0: C站模型 1: Huggingface模型
-    sha256 = db.Column(db.String(128), primary_key=True)
-    cache_path = db.Column(db.String(256), nullable=True) # 缓存路径
-    download_url = db.Column(db.String(1024), nullable=True)
-    status = db.Column(db.String(32), nullable=True,default=0) # 模型状态 0: 未下载 1: 已下载 2: 下载中
-    size = db.Column(db.Integer, nullable=True) # 模型大小
-    true_file_name = db.Column(db.String(256), nullable=True) # 真实文件名
+    name = db.Column(db.String(256), nullable=False)              # 模型名称 huggingface: repoid  civiai: sha256  other: modelname
+    model_type = db.Column(db.String(32), nullable=False)         # -1: 其他 0: C站模型 1: Huggingface模型
+    sha256 = db.Column(db.String(128), primary_key=True)          # 模型SHA256
+    cache_path = db.Column(db.String(256), nullable=True)         # 缓存路径
+    download_url = db.Column(db.String(1024), nullable=True)      # 下载URL
+    status = db.Column(db.String(32), nullable=True,default=0)    # 模型状态 0: 未下载 1: 已下载 2: 下载中
+    size = db.Column(db.Integer, nullable=True)                   # 模型大小
+    true_file_name = db.Column(db.String(256), nullable=True)     # 真实文件名
 
     def __repr__(self):
         return f'<Model {self.name}>'
