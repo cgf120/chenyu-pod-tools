@@ -11,7 +11,7 @@ api_bp = Blueprint('api', __name__)
 def create_model():
     data = request.get_json()
     new_model = Model()
-    identity = data['name'] # huggingface就是repoId c站就是sha256
+    identity = data['name']                                        # huggingface就是repoId c站就是sha256
     new_model.model_type = data['model_type']
     if Model.query.get(identity) is not None:
         return jsonify({'message': '模型已存在'}), 400
