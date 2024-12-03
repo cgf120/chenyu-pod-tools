@@ -183,7 +183,7 @@ def clone_and_checkout(repo_url: str, commit_log: str, output_dir: str):
     # 1. 克隆仓库
     try:
         logging.info(f"克隆仓库 {repo_url} 到 {clone_path}...")
-        subprocess.run(['git', 'clone', repo_url, clone_path], check=True)
+        subprocess.run(['git', 'clone','--recursive', repo_url, clone_path], check=True)
 
         # 2. 进入仓库目录并切换到指定提交
         logging.info(f"克隆仓库成功，切换到提交 {commit_log}...")
