@@ -14,7 +14,7 @@ def load_pod_from_json(file_path: str) -> PodConfig:
     with open(file_path, 'r') as file:
         json_data = json.load(file)  # 读取 JSON 文件
     return PodConfig(**json_data)  # 使用 Pydantic 将字典转换为对象
-base_dir = "/poddata"
+base_dir = "/poddata/ComfyUI"
 
 if __name__ == "__main__":
     """读取当前pod压缩文件并解压到/poddata"""
