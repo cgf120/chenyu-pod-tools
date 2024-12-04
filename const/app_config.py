@@ -5,8 +5,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-CIVIAI_API_KEY="fb5e87bce2c0d69ab913e4828cd643e6"
-HUGGINGFACE_TOKEN="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"
+CIVIAI_API_KEY=""
+HUGGINGFACE_TOKEN=""
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
 POD_MANAGER_URL = "https://models.chenyu.cn"
 
