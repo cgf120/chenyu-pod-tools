@@ -134,10 +134,13 @@ class App:
         for index, repo_dir in enumerate(repo_dirs):
             repo_path = os.path.join(self.plugin_dir.get(), repo_dir)
             self.log_text.insert("1.0", f"【提示】处理插件[{index + 1}/{len(repo_dirs)}]：{repo_path}\n")
-            name, remote_url, commit_log = get_git_repo_info(repo_path)
-            plugin = Plugin(name=name, remote_url=remote_url, commit_log=commit_log)
-            self.plugins.append(plugin)
-            self.log_text.insert("1.0", f"【提示】插件信息[{index + 1}/{len(repo_dirs)}]：{plugin}\n")
+            try:
+                name, remote_url, commit_log = get_git_repo_info(repo_path)
+                plugin = Plugin(name=name, remote_url=remote_url, commit_log=commit_log)
+                self.plugins.append(plugin)
+                self.log_text.insert("1.0", f"【提示】插件信息[{index + 1}/{len(repo_dirs)}]：{plugin}\n")
+            except Exception as e:
+                pass
         self.log_text.insert("1.0", f"【提示】插件处理完成\n")
 
     def load_packages(self):
@@ -154,7 +157,10 @@ class App:
         self.log_text.insert("1.0", f"【提示】Python包数量：{len(packages)}\n")
         for index, line in enumerate(packages):
             self.log_text.insert("1.0", f"【提示】Python包[{index + 1}/{len(packages)}]：{line}\n")
-            name, version, remote_url, package_type, err = parse_python_packages(line)
+            try:
+                name, version, remote_url, package_type, err = parse_python_packages(line)
+            except Exception as e:
+                pass
             if err is not None:
                 self.log_text.insert("1.0", f"【警告】Python包解析失败：{err},忽略\n")
                 continue
