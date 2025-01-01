@@ -53,9 +53,9 @@ class App:
         arrow1 = ttk.Label(button_frame, text="→")
         arrow1.grid(row=0, column=1)
 
-        self.choice_python_btn = ttk.Button(button_frame, text="选择python目录", style="info.TButton",
-                                            command=self.load_python_info)
-        self.choice_python_btn.grid(row=0, column=2)
+        # self.choice_python_btn = ttk.Button(button_frame, text="选择python目录", style="info.TButton",
+        #                                     command=self.load_python_info)
+        # self.choice_python_btn.grid(row=0, column=2)
 
         arrow2 = ttk.Label(button_frame, text="→")
         arrow2.grid(row=0, column=3)
@@ -111,19 +111,19 @@ class App:
 
     def process(self):
         self.choice_app_btn.config(state="disabled")
-        self.choice_python_btn.config(state="disabled")
+        # self.choice_python_btn.config(state="disabled")
         self.detail_btn.config(state="disabled")
         self.log_text.insert("1.0", "【提示】开始处理,可能耗时很久，请耐心等待～\n")
         threading.Thread(target=self.calc_data).start()
 
     def calc_data(self):
         self.load_plugins()
-        self.load_packages()
+        # self.load_packages()
         self.load_models()
         self.pack_files()
         self.log_text.insert("1.0", "【提示】处理完成\n")
         self.choice_app_btn.config(state="normal")
-        self.choice_python_btn.config(state="normal")
+        # self.choice_python_btn.config(state="normal")
         self.detail_btn.config(state="normal")
 
     def load_plugins(self):
@@ -237,10 +237,10 @@ class App:
             self.choice_app_btn.config(style="success.TButton")
         else:
             ready = False
-        if self.check_python_info():
-            self.choice_python_btn.config(style="success.TButton")
-        else:
-            ready = False
+        # if self.check_python_info():
+        #     self.choice_python_btn.config(style="success.TButton")
+        # else:
+        #     ready = False
         if ready:
             self.detail_btn.config(style="primary.TButton")
 
