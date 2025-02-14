@@ -38,8 +38,13 @@ class App:
         self.plugins = []
         self.packages = []
 
+        # 新增：进度条控件
+        self.progress_bar = None
+        self.progress_label = None
+
         self.create_steps()
         self.create_tabs()
+        self.create_progress_bar()  # 新增进度条初始化
 
     def create_steps(self):
         # 选择应用目录
@@ -117,10 +122,31 @@ class App:
         threading.Thread(target=self.calc_data).start()
 
     def calc_data(self):
+        """修改现有的处理方法，添加进度显示"""
+        total_steps = 4  # 总步骤数
+        current_step = 0
+        
+        # 处理插件
+        current_step += 1
+        self.update_progress(current_step/total_steps * 100, "正在处理插件...")
         self.load_plugins()
+        
+        # 处理包
+        current_step += 1
+        self.update_progress(current_step/total_steps * 100, "正在处理Python包...")
         self.load_packages()
+        
+        # 处理模型
+        current_step += 1
+        self.update_progress(current_step/total_steps * 100, "正在处理模型...")
         self.load_models()
+        
+        # 打包文件
+        current_step += 1
+        self.update_progress(current_step/total_steps * 100, "正在打包文件...")
         self.pack_files()
+        
+        self.update_progress(100, "处理完成")
         self.log_text.insert("1.0", "【提示】处理完成\n")
         self.choice_app_btn.config(state="normal")
         self.choice_python_btn.config(state="normal")
@@ -128,10 +154,19 @@ class App:
 
     def load_plugins(self):
         self.log_text.insert("1.0", f"【提示】开始处理插件\n")
-        items = os.listdir(self.plugin_dir.get())
+        plugin_dir = self.plugin_dir.get()
+        # 1. 检查插件目录是否存在
+        if not os.path.exists(plugin_dir):
+            self.log_text.insert("1.0", f"【警告】插件目录不存在：{plugin_dir}\n")
+            return
+    
+        items = os.listdir(plugin_dir)
         repo_dirs = [d for d in items if os.path.isdir(os.path.join(self.plugin_dir.get(), d))]
         self.log_text.insert("1.0", f"【提示】插件目录：{self.plugin_dir.get()},共需要处理插件{len(repo_dirs)}个\n")
+        
         for index, repo_dir in enumerate(repo_dirs):
+            progress = (index + 1) / len(repo_dirs) * 100
+            self.update_progress(progress, f"处理插件 {index + 1}/{len(repo_dirs)}")
             repo_path = os.path.join(self.plugin_dir.get(), repo_dir)
             self.log_text.insert("1.0", f"【提示】处理插件[{index + 1}/{len(repo_dirs)}]：{repo_path}\n")
             name, remote_url, commit_log = get_git_repo_info(repo_path)
@@ -152,7 +187,10 @@ class App:
                                          startupinfo=startupinfo).strip()
         packages = result.strip().split("\n")
         self.log_text.insert("1.0", f"【提示】Python包数量：{len(packages)}\n")
+        
         for index, line in enumerate(packages):
+            progress = (index + 1) / len(packages) * 100
+            self.update_progress(progress, f"处理Python包 {index + 1}/{len(packages)}")
             self.log_text.insert("1.0", f"【提示】Python包[{index + 1}/{len(packages)}]：{line}\n")
             name, version, remote_url, package_type, err = parse_python_packages(line)
             if err is not None:
@@ -164,9 +202,6 @@ class App:
             self.packages.append(package)
         self.log_text.insert("1.0", f"【提示】Python包处理完成\n")
 
-
-
-
     def load_models(self):
         self.log_text.insert("1.0", f"【提示】开始处理模型\n")
         file_list = []
@@ -174,7 +209,10 @@ class App:
             for file in files:
                 file_list.append(os.path.join(root_dir, file))
         self.log_text.insert("1.0", f"【提示】模型目录：{self.model_dir.get()},共需要处理模型{len(file_list)}个\n")
+        
         for index, model_path in enumerate(file_list):
+            progress = (index + 1) / len(file_list) * 100
+            self.update_progress(progress, f"处理模型 {index + 1}/{len(file_list)}")
             model_name = os.path.basename(model_path)
             self.log_text.insert("1.0", f"【提示】处理模型[{index + 1}/{len(file_list)}]：{model_path}\n")
             sha256 = calculate_sha256(model_path)
@@ -184,6 +222,8 @@ class App:
                 # 云端不存在，C站存在，添加到云端
                 add_models(sha256)
             model_relpath = os.path.relpath(model_path, self.model_dir.get())
+            # 将model_relpath转换为linux路径格式
+            model_relpath = os.path.normpath(model_relpath).replace('\\', '/')
             if sha256 not in self.models:
                 self.models[sha256] = Model(model_name=model_name, model_id=model_id, sha256=sha256, cache_path=cache_path, file_path = [model_relpath], download_url= download_url)
             else:
@@ -259,3 +299,37 @@ class App:
         if self.python_version.get() is None or self.python_version.get() == "":
             return False
         return True
+
+    ################################
+    # 新增: 进度显示相关方法 START #
+    ################################
+    def create_progress_bar(self):
+        """创建进度条界面元素"""
+        progress_frame = ttk.Frame(self.master)
+        progress_frame.pack(fill=X, padx=5, pady=5)
+        
+        self.progress_label = ttk.Label(progress_frame, text="准备就绪")
+        self.progress_label.pack(side=TOP)
+        
+        self.progress_bar = ttk.Progressbar(
+            progress_frame,
+            length=400,
+            mode='determinate'
+        )
+        self.progress_bar.pack(fill=X)
+
+    def update_progress(self, percentage, message):
+        """
+        更新进度条和提示信息
+        :param percentage: 进度百分比 (0-100)
+        :param message: 提示信息
+        """
+         # 将百分比转换为整数
+        percentage = int(percentage)
+        self.progress_bar['value'] = percentage
+        self.progress_label.config(text=message)
+        self.master.update_idletasks()
+        self.log_text.insert("1.0", f"【进度】{message} - {percentage}%\n")
+    ################################
+    #  新增: 进度显示相关方法 END  #
+    ################################
